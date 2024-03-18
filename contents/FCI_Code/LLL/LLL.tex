@@ -1,0 +1,106 @@
+\begin{minted}[linenos, breaklines, mathescape, numbersep=5pt, frame=lines, framesep=2mm]{julia}
+module LLL
+
+using LinearAlgebra
+using EllipticFunctions # need to use the log of the elliptic theta function `ljtheta1`
+using MLStyle
+using Test
+
+const RUN_TESTS = true
+const ERROR = 1.0E-10
+const ANGLE_ERROR = 1.0E-6
+
+export Torus_Sample, Haldane_Rezayi_State, Bloch_Basis, LLL_States_in_Bloch_Basis
+export initialize_torus_sample, initialize_bloch_basis, _q_int_to_q_complex, _q_int_to_q_cart, _k_int_plus_q_int_back_to_BZ
+
+# Structs Below
+"""
+### Modular-τ Representation of Torus
+> with extra constraint of Dirac quantization `(δL1×L2)⋅z/ℓ^2=2π` and `(δL2×L1)⋅z/ℓ^2=2π`, and the twisted boundary condition `[ϕ1,ϕ2]`
+"""
+struct Torus_Sample
+    ℓ::Float64 # magnetic length
+    L1::Float64 # the length of the torus (parallelogram) along x-axis, always real
+    τ::ComplexF64 # the geometry of the parallelogram is determined by `(L1, L1*τ)` on the complex plane (so `L2=L1*τ`)
+    Ns::Int64 # number of flux piercing through the parallelogram
+    mag_trans_units::Vector{ComplexF64} # the *minimal* quantized intervals of real-space translation step `(δL1, δL2)` along two oblique directions such that each thin rectangular is pierced with exact *one* quantum flux `(δL1×L2)⋅z/ℓ^2=2π` or `(δL2×L1)⋅z/ℓ^2=2π`. This complex vector serve as the `Plank vector` the LLL. Namely, any allowed magnetic translation must be integer multiples of `δL1` and/or `δL2`
+    phase_twists_over_2π::Vector{Float64} # phase twists along two oblique directions
+end
+
+
+"""
+### Haldane-Rezayi Wave Functions
+- `k_over_2π`: the U(1) *real* parameter `k` (devided by 2π) for the holomorphic part `f(z)` of Haldane-Rezay wave function
+- `zν_list`: position of `Ns` zeros for the holomorphic part `f(z)` of Haldane-Rezay wave function
+- `log_of_norm_factor`: the *logarithm* of the normalization factor of full Haldane-Rezayi wave function, i.e., `ψ(z) = N * e^{-(z-z_bar)^2/(8ℓ^2)} * f(z)` with `N≡e^(log_of_norm_factor)`. We will initialize `log_of_norm_factor=0.0` and determine them during the runtime by *relative* normalization using magnetic translation algebra
+---
+The real parameter `k` and the sum of `Ns`-position of zeros `z0=∑_ν zν` can be shown to satisfy the constraint equations due to the quasiperiodicity of the elliptic-ϑ function within the fundamental domain, see `PhysRevB.31.2529` for details.
+"""
+mutable struct Haldane_Rezayi_State
+    k_over_2π::Float64 # the U(1) parameter `k` for the holomorphic part `f(z)` of Haldane-Rezay wave function 
+    zν_list::Vector{ComplexF64} # position of `Ns` zeros for the holomorphic part `f(z)` of Haldane-Rezay wave function 
+    log_of_norm_factor::ComplexF64 # `log_of_norm_factor`: the *logarithm* of the normalization factor of full Haldane-Rezayi wave function, i.e., `ψ(z) = N * e^{-(z-z_bar)^2/(8ℓ^2)} * f(z)` with `N≡e^(log_of_norm_factor)`.
+end
+
+
+"""
+### LLL Bloch Basis as the Magnetic Translations Eigenstates
+- `torus_sample`: the torus data
+- `T_vec`: commuting `T1` times of `δL1`-magnetic translations and `T2` times of `δL2`-magnetic translations define the bloch basis. Note: the *real-space* sample size (as well as the momentum-space sample size) `N_vec` is then the reverse: `N_vec=reverse(T_vec)`
+- `G_vec`: reciprocal vectors
+- `z_seed`: the random seed needed for computation of magnetic translation eigvalues
+- `state_list`: the list of LLL states by *equally distribute* the `Ns` zeros of Haldane-Rezayi wave functions
+- `k_int_list`: the list of allowed `k`-points in the first Brillouin zone, stored in *the same order* as `state_list` (this is NOT the ordered list like `[[i,j] for i in 0:(T1-1) for j in 0:(T2-1)]`)
+- `k_int_to_ind_hashmap`: the hashmap from `k_int` to the index of `k_int_list` (as well as the index of `state_list`)
+- `k1_ind_and_k2_ind_to_k1_plus_k2_ind_map`: `Matrix{k1_ind, k2_ind}=[k1+k2]_ind`
+- `q_int_list`: the `Ns*Ns` *distinct* displacement vectors, so is also the *distinct* argument for the LLL density operators. Note: different from `k_int_list`, the `q_int_list` is indeed the simple ordered list like `[[i,j] for i in 0:(Ns-1) for j in 0:(Ns-1)]`
+- `q_int_to_ind_hashmap`: the hashmap from `q_int` to the index of `q_int_list`
+- `n_int_list`: the full `Ns*Ns` allowed n-points
+- `ρ_array`: full matrix for the LLL density operator for all q-point: each column save a list of coefficients for the density operator `ρ_q` carrying momentum-q
+---
+Any state living in the LLL can be expanded with these magnetic translation eigenstates. 
+> Note: during the construction, the compatibility condition between magnetic translation and magnetic rotation are also considered.
+"""
+mutable struct Bloch_Basis
+    torus_sample::Torus_Sample # torus data
+    T_vec::Vector{Int64} # commuting `T1` times of `δL1`-magnetic translations and `T2` times of `δL2`-magnetic translations define the bloch basis. Note: the *real-space* sample size (as well as the momentum-space sample size) `N_vec` is then the reverse: `N_vec=reverse(T_vec)`
+    G_vec::Vector{ComplexF64} # reciprocal vectors
+
+    z_seed::ComplexF64 # the random seed needed for computation of magnetic translation eigvalues
+    state_list::Vector{Haldane_Rezayi_State}
+    k_int_list::Vector{Vector{Int64}}
+    k_int_to_ind_hashmap::Dict{Vector{Int64},Int64}
+    # k_ind_to_LLL_state_ind_map::Vector{Int64} # `Vector[k_ind]=LLL_state_ind` # Dict{Vector{Int64},Haldane_Rezayi_State}
+    k1_ind_and_k2_ind_to_k1_plus_k2_ind_map::Matrix{Int64} # `Matrix{k1_ind, k2_ind}=[k1+k2]_ind`
+
+    q_int_list::Vector{Vector{Int64}} # the *distinct* displacement vectors, so is also the *distinct* argument for the LLL density operators
+    q_int_to_ind_hashmap::Dict{Vector{Int64},Int64}
+    n_int_list::Vector{Vector{Int64}}
+
+    ρ_array::Matrix{ComplexF64} # full matrix for the LLL density operator for all q-point: each column save a list of coefficients for the density operator `ρ_q` carrying momentum-q
+end
+
+
+"### Expansion of LLL state in the `Bloch_Basis`"
+struct LLL_States_in_Bloch_Basis
+    coef::Vector{ComplexF64}
+    basis::Bloch_Basis
+end
+
+
+# Methods Below
+include("LLL_init.jl")
+include("LLL_utils.jl")
+include("LLL_magnetic_translation.jl")
+include("LLL_magnetic_rotation.jl")
+include("LLL_Haldane_Rezayi_wavefunction.jl")
+include("LLL_density_operator.jl")
+
+
+# Test Set 
+if RUN_TESTS
+    include("LLL_test.jl")
+end
+
+end # module LLL
+\end{minted}

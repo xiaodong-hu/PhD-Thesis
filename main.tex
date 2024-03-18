@@ -1,0 +1,119 @@
+\documentclass[10pt,a4paper]{report}  % default square logo 
+
+\usepackage{stix2} % stix2 font
+\usepackage{amsmath,amssymb,amsfonts,bm}
+\usepackage[all]{xy}
+
+\include{contents/user_defined_unicode_chars} % special manual handling for missing unicode chars in raw code
+
+\usepackage{geometry}
+    \geometry{
+        a4paper,
+        left=25mm,
+        right=25mm,
+        top=25mm,
+        bottom=30mm
+        % total={170mm,257mm},
+        % left=30mm,
+        % right=30mm,
+        % top=35mm,
+        % bottom=35mm
+    }
+\usepackage[shortlabels]{enumitem} % to customize enumerate
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+
+\definecolor{celestialblue}{rgb}{0.29, 0.59, 0.82}
+\definecolor{darkpink}{rgb}{0.91, 0.33, 0.5}
+\usepackage[colorlinks=true, linkcolor=darkpink]{hyperref}
+
+\usepackage{minted} % to insert code： \begin{minted}[linenos, breaklines, mathescape, numbersep=5pt, gobble=2, frame=lines, framesep=2mm]{julia} ... \end{minted}
+
+\usepackage{diagbox}
+\usepackage{appendix}
+\usepackage{ragged2e}
+
+
+% macros to fill in the thesis frontpage
+\newcommand{\thesistitle}{Symmetry, Topology and Strong Correlations in\\ Twisted 2D Materials}
+\newcommand{\department}{Boston College\\[5mm] The Graduate School of Arts and Sciences\\[5mm] Department of Physics}
+\newcommand{\name}{Xiaodong Hu}
+\newcommand{\defenseinfo}{submitted in partial fulfillment of the requirements\\[5mm] for the degree of\\[5mm] \emph{Doctor of Philosophy}}
+\newcommand{\defensetime}{April 2024}
+
+\renewcommand{\maketitle}{
+    \thispagestyle{empty}
+    % \null\vfill
+    \begin{center}
+        {\Huge \department\\}
+        \vspace{15mm}
+        {\Huge {\bfseries \thesistitle}\\}
+        \vspace{15mm}
+        {\Large
+            a dissertation\\[5mm] by\\[5mm]
+            {\bfseries \name}\\
+            \vspace{15mm}
+            \null\vfill
+            {\defenseinfo\\[15mm] \defensetime}
+        }
+    \end{center}
+}
+\renewenvironment{abstract}{
+    \begin{center}
+        \textbf{Abstract}
+    \end{center}
+    \noindent
+}
+
+
+\newcommand{\dd}{{\mathrm d}}
+
+
+\begin{document}
+
+%this baselineskip gives sufficient line spacing for an examiner to easily
+%markup the thesis with comments
+\baselineskip=18pt plus1pt
+
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+
+\maketitle                  % create a title page from the preamble info
+% \include{dedication}        % include a dedication.tex file
+% \include{acknowlegements}   % include an acknowledgements.tex file
+% \include{abstract}          % include the abstract
+
+
+\tableofcontents            % generate and include a table of contents
+\listoffigures              % generate and include a list of figures
+\listoftables
+
+
+%now include the files of latex for each of the chapters etc
+\include{contents/Prologue/Prologue}
+% \include{contents/SATHE/SATHE}
+% \include{contents/FCI_ProjWfc/FCI_ProjWfc}
+% \include{contents/Ising_Top/Ising_Top}
+% \include{contents/FCI_Code/FCI_Code}
+
+
+%now enable appendix numbering format and include any appendices
+% \appendix
+% \include{appendix1}
+% \include{appendix2}
+
+%next line adds the Bibliography to the contents page
+\addcontentsline{toc}{chapter}{Bibliography}
+%uncomment next line to change bibliography name to references
+% \renewcommand{\bibname}{References}
+
+% \bibliographystyle{plain}  %use the plain bibliography style
+\bibliographystyle{unsrt} % ensure order of appearance
+\bibliography{hxd}        %use a bibtex bibliography file refs.bib
+
+
+\end{document}

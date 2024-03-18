@@ -1,0 +1,330 @@
+\begin{minted}[linenos, breaklines, mathescape, numbersep=5pt, frame=lines, framesep=2mm]{julia}
+###########################################################################################################
+##################################### Main Construction Functions #########################################
+###########################################################################################################
+"""
+### Initialize Torus Sample
+> - `τ`: complex modular parameter (with the assumption of `imag(τ)>0`)
+> - `Ns`: number of fluxes (number of fluxes)
+> - `phase_twists_over_2π`: phase twists along two oblique directions
+---
+Here Dirac quantization condition `|L1×L2|=L1^2*Im(τ)=2*pi*ℓ^2*Ns` is always implemented. Particularly, the complex vector `mag_tans_units` serve as the `Plank lengths` of the FQH system on the torus. As a result, any allowed magnetic translation must be an integer multiple of `δL1` and/or `δL2`
+"""
+function initialize_torus_sample(τ::ComplexF64, Ns::Int64, phase_twists_over_2π::Vector{Float64}; ℓ::Float64=1.0)
+    @assert imag(τ) > 0 # we always assume `sin(θ)>0`
+    printstyled("Info: ", bold=true, color=:blue)
+    println("torus sample with `angle(τ)=", round(rad2deg(angle(τ)), digits=2), " degree` is constructed")
+    L1 = sqrt(2 * pi * ℓ^2 * Ns / imag(τ)) # Dirac quantization condition `|L1×L2|=L1^2*Im(τ)=2*pi*ℓ^2*Ns`
+    mag_tans_units = [L1 / Ns, L1 * τ / Ns] .|> ComplexF64 # the *minimal* quantized intervals of real-space sample `(δL1, δL2)` along two oblique directions such that each thin rectangular is pierced with *only one* quantum flux `(δL1×L2)⋅z/ℓ^2=2π` or `(δL2×L1)⋅z/ℓ^2=2π`. 
+
+    return Torus_Sample(
+        ℓ,
+        L1,
+        τ,
+        Ns,
+        mag_tans_units,
+        phase_twists_over_2π
+    )
+end
+
+
+
+"""
+### Initialize the Bloch Basis from Commuting `T1*T2` Magnetic Translations
+- `T_vec`: commuting `T1` times of `δL1`-magnetic translations and `T2` times of `δL2`-magnetic translations define the bloch basis. See the doc of `_generate_LLL_state_list` for details.
+---
+Here the strategy is: 
+1. *Equally distribute* all zeros `{z_ν}` of the Haldane-Rezayi wavefunction to form a real-space lattice, on which magnetic translations can be performed.
+2. After appropriate gauge fixing, the eigenstates of magnetic translation operators can be obtained.
+
+Note: we choose the sign of translation operator sending `|z⟩->|z-z_0⟩`, so under magnetic translation `t(z_0)=U(z_0)T(z_0)`, `t(z_0)ψ(z)≡⟨z|t(z_0)|ψ⟩=ψ(z+z_0)`. So given one initial zero `z_origin`, all the other zeros can be generated with the magnetic translation `t(L1)` and `t(L1*τ)` on the complex plane.
+"""
+function initialize_bloch_basis(T_vec::Vector{Int64}, torus_sample::Torus_Sample)
+    Ns = torus_sample.Ns
+    @assert reduce(*, T_vec) == Ns # make sure the number of grids matches the number of fluxes
+    (T1, T2) = Tuple(T_vec)
+    (N1, N2) = Tuple(reverse(T_vec))
+    L1 = torus_sample.L1
+    τ = torus_sample.τ
+    ℓ = torus_sample.ℓ
+    θ = angle(τ)
+
+    (a1, a2) = (L1 / N1, L1 * τ / N2) # lattice vectors (in complex coordinates)
+    G_vec = [-im * a2, im * a1] / ℓ^2 # 2d reciprocal vectors (complex π/2-rotation is simply implemented by multiply with `im`). The corresponding explicit form is `2 * pi * Ns / sin(θ) * [-im * exp(im * θ) / (L1 * T1), im / (L2 * T2)]`, where `L2≡|L1*τ|`
+
+    LLL_state_list = _generate_LLL_state_list(T_vec, torus_sample)
+
+    let z_seed = 0.723 + 0.267 * im # reduce(+, [1, im] .* rand(2)) |> normalize # seed for construction of the magnetic bloch states and gauge fixings, which can be chosen randomly (note: we require `Im(z)>0`) 
+        k_int_list = _generate_k_int_list_in_LLL_state_order(z_seed, T_vec, torus_sample, LLL_state_list; rotation_angle=θ)
+        # @show k_int_list
+
+        k_int_to_ind_hashmap = Dict{Vector{Int64},Int64}()
+        let k_ind = 1
+            for k_int in k_int_list
+                k_int_to_ind_hashmap[k_int] = k_ind
+                k_ind += 1
+            end
+        end
+
+        k1_ind_and_k2_ind_to_k1_plus_k2_ind_map = Matrix{Int64}(undef, Ns, Ns)
+        for k1_ind in eachindex(k_int_list), k2_ind in eachindex(k_int_list)
+            k1_int = k_int_list[k1_ind]
+            k2_int = k_int_list[k2_ind]
+            k1_plus_k2_back_to_BZ_int = mod.(k1_int + k2_int, reverse(T_vec))
+
+            k1_ind_and_k2_ind_to_k1_plus_k2_ind_map[k1_ind, k2_ind] = k_int_to_ind_hashmap[k1_plus_k2_back_to_BZ_int]
+        end
+
+        q_int_list = Vector{Vector{Int64}}(undef, Ns^2)
+        q_int_to_ind_hashmap = Dict{Vector{Int64},Int64}()
+        ρ_array = Matrix{ComplexF64}(undef, Ns, Ns^2) # placeholder for `ρ_array[k_ind, q_ind]`
+        let q_ind = 1
+            for i in 0:(Ns-1), j in 0:(Ns-1)
+                q_int = [i, j]
+                q_int_list[q_ind] = q_int
+                q_int_to_ind_hashmap[q_int] = q_ind
+
+                q_ind += 1
+            end
+        end
+        n_int_list = [[T1, T2] for T1 in 0:(T1-1) for T2 in 0:(T2-1)]
+
+        let bloch_basis = Bloch_Basis(
+                torus_sample,
+                T_vec,
+                G_vec,
+                z_seed,
+                LLL_state_list,
+                k_int_list,
+                k_int_to_ind_hashmap,
+                k1_ind_and_k2_ind_to_k1_plus_k2_ind_map,
+                q_int_list,
+                q_int_to_ind_hashmap,
+                n_int_list,
+                ρ_array
+            )
+            # update the unset `ρ_q`-matrics for `bloch_basis`
+            for q_ind in axes(ρ_array, 2)
+                q_int = q_int_list[q_ind]
+                @views ρ_array[:, q_ind] = _generate_ρ_q_list_for_bloch_basis(q_int, bloch_basis)
+            end
+
+            _update_Haldane_Rezayi_state_norm_factor_with_gauge_fixing!(bloch_basis)
+
+            return bloch_basis
+        end
+    end
+end
+
+
+
+###########################################################################################################
+######################################## Auxiliary Functions ##############################################
+###########################################################################################################
+"Find one solution of `k_over_2π` and `z_tot` from `torus_sample` using Eq.(7) of `PhysRevB.31.2529`"
+function _find_k_over_2π_and_z_tot_from_torus_sample(torus_sample::Torus_Sample)
+    let
+        (ϕ1, ϕ2) = Tuple(2 * pi * torus_sample.phase_twists_over_2π)
+        Ns = torus_sample.Ns
+        L1 = torus_sample.L1
+        τ = torus_sample.τ
+        begin
+            k_over_2π = begin
+                k = log((-1)^Ns * exp(im * ϕ1)) / (im * L1) # i.e. `exp(im*k*L1) = (-1)^Ns * exp(im*ϕ1)`
+                @assert isapprox(imag(k), 0.0; atol=ERROR) # `k` is real
+                k / (2 * π) |> real
+            end
+            z_tot = log((-1)^Ns * exp(im * (ϕ2 - k * L1 * τ))) / (2 * pi * im / L1) # i.e. `exp(im*2*π*z_tot/L1) = (-1)^Ns * exp(im*(ϕ2-k*L1*τ))`
+
+            return (k_over_2π, z_tot)
+        end
+    end
+end
+
+
+"""### Generate `Ns`-independent `Haldane_Rezayi_State` Satisfying the Haldane-Rezayi Quasiperiodicity Conditions, see `PhysRevB.31.2529`
+- `T_vec`: commuting `T1` times of `δL1`-magnetic translations and `T2` times of `δL2`-magnetic translations define the bloch basis
+> Note: 
+> 1. recall that given a `N_vec≡[N1,N2]`-grid of real-space sample, i.e. `a1=L1/N1` and `a2=L2/N2`, **there are actually `N2` number of `δL1`-magnetic translation within `[0,a1)`, and `N1` number of `δL2`-magnetic translation within `[0,a2)`**. So we always have the correspondence that `[N1,N2]≡[T2,T1]`, or `N_vec=reverse(T_vec)`. 
+> 2. Periodicity of Haldane-Rezayi wave function `ψ(r+L1)∝ψ(r)` and `ψ(r+L2)∝ψ(r)` ensures that the reciprocal lattice is of the same shape as the `[N1,N2]`-grid of real-space lattice (lattice of zeros by construction). Namely,
+>```
+k_{m1,m2} ≡ (m1 + ϕ1_over_2π)/N1 * G1 + (m2 + ϕ2_over_2π)/N2 * G2
+> ```
+> where `G1` and `G2` are the reciprocal lattice vectors.
+---
+The strategy is to *equally distrbute* the `Ns` zeros. So each zeros should be seperated with `a1 = |L1|/T2` along `L1` direction, and `Δ2 = L1*τ/T1` along `L1*τ` direction. We will take these two intervals as the bravias vector `a1` and `a2`, from which magnetic translation operators can be defined.
+"""
+function _generate_LLL_state_list(T_vec::Vector{Int64}, torus_sample::Torus_Sample)
+    (T1, T2) = Tuple(T_vec)
+    (N1, N2) = Tuple(reverse(T_vec))
+    L1 = torus_sample.L1
+    τ = torus_sample.τ
+    Ns = torus_sample.Ns
+    (δL1, δL2) = Tuple(torus_sample.mag_trans_units)
+    (a1, a2) = (L1 / N1, L1 * τ / N2) # lattice vectors (in complex coordinates)
+    (k_over_2π, z_tot) = _find_k_over_2π_and_z_tot_from_torus_sample(torus_sample)
+
+    z_origin = z_tot / Ns # scale `z_tot` to the parallalogram spanned with `(a1,a2)=(L1/N1, L2/N2)` to serve as the ``new origin`` of the cartesian lattice
+
+    # shift origin of lattice if the number of sites is even
+    if mod(N1, 2) == 0 # if the L1 direction has even sites, shift by half grid to avoid duplicate counting
+        z_origin += a1 / 2
+    end
+    if mod(N2, 2) == 0 # if the L2 direction has even sites, shift by half grid to avoid duplicate counting
+        z_origin += a2 / 2
+    end
+    zν_list = [z_origin + i * a1 + j * a2 for i in 0:(N1-1) for j in 0:(N2-1)]
+
+    # Due to our choice of `z_origin=z_tot/N_s` (and possible associated extra shifts of `a1/2` and `a2/2`), the sum of the position of all zeros `∑_ν zν` will no longer be the same as the previously obtained `z_tot`. In fact, the new sum of zeros `z_tot_new = ∑_ν zν = ∑_{i,j} (z_origin + i * a1 + j * a2) = z_tot + M1*L1 + M2*L1*τ`, with the *integer* coefficients `M1` and `M2`. The integer-fact can be analytically shown with account of the extra shifts. 
+    # Numerically, however, we can simply use the fact that all imaginary contribution come from the second term `M2*L1*τ` to first extract the expansion coefficient `M2`, then extract `M1` once all complex contributions are subtracted.
+    Δz_tot = sum(zν_list) - z_tot # note here `Δz_tot = M1*L1 + M2*L1*τ` 
+    M2 = round(imag(Δz_tot) / imag(L1 * τ), digits=10)
+    M1 = round((Δz_tot - M2 * L1 * τ) / L1, digits=10)
+    @assert isinteger(M2) && isinteger(M1)
+
+    # Due to the quasiperiodicity for Haldane-Rezayi wavefunctions, the parameter `k` will also suffer some change associated with the change of `z_tot`. From `exp(im*2*π*z_tot/L1) = (-1)^Ns * exp(im*(ϕ2-k*L1*τ))` one can easily see that the associated changes satisfy `e^{im*2π*Δz_tot/L1} = e^{-im*Δk*L1*τ}`. Because parameter `k` is always *real*, there cannot be any contribution from the term involving `M1/τ`. Instead, we must be left with `Δk = -2π*M2/L1`.
+    # Furthermore, note that within the first unit cell there are `Ns`-independent origin points `z_{origin, (m1,m2)} = z_origin + m1*δ1 + m2*δ2` due to Dirac quantization. So we actually have `Ns` independent collection of `zν_list` (as desired for Haldane-Rezayi wave function). Following the same spirit above (to extract the integer tuple `(M1, M2)`), one can immediately obtain the shift of the sum of all zeros labelled with `(m1,m2)` as `Δz_tot_{(m1,m2)} = (M1+m1)*L1 + (M2+m2)*L1*τ`. Therefore, the associated change for `k` reads `Δk = -2π*(M2+m2)/L1`
+    # each Haldane-Rezayi state serves as one LLL state
+    LLL_state_list = [
+        Haldane_Rezayi_State(
+            k_over_2π - (M2 + m2) / L1,
+            zν_list .+ (m1 * δL1 + m2 * δL2),
+            Complex(0.0) # the `log_of_norm_factor` is initialized as 0.0 and will be determined later
+        )
+        for m1 in 0:(T1-1) for m2 in 0:(T2-1)
+    ]
+    return LLL_state_list
+end
+
+
+
+"""
+### Label Each LLL Bloch State (Haldane-Rezayi State) with a Integer Tuple `|ψ⟩=|k≡(k1,k2)⟩`, and Generate `k_int_list` in *the Same Order* as the Given `LLL_state_list`
+> - `z`: the random seed for the magnetic translation operator
+> - `rotation_angle`: the rotation angle of the lattice (to determine the rotation order of the lattice)
+---
+The LLL Bloch state are defined to satisfy `T(a_α)|ψ⟩=e^{-i2π*α_eigval_over_2π}|ψ⟩`. If we label the bloch state with integer tuples `(k1,k2)`, then gauge fixing  `T(a_α)|k1,k2⟩=e^{-im*2π*m_α/N_β-im*ϕ_α/N_β}|k1,k2⟩`. So we have `m_α/N_β = (α_eigval_over_2π) - (ϕ_α/2π)/N_β`. Namely, the integer tuple `(k1,k2)` can be extracted from the eigenvalues of magnetic translation operators `T(a_α)`.
+
+We do need the information of `rotation_angle` because **magnetic translation and magnetic rotation of the LLL states are compatible with each other *for C3 or C6 lattice*, only if the magnetic rotation is taken as been performed NOT at Γ-point, but at `[π,π]`**. In terms of magnetic translation eigenvalues, this effect will shift the original eigenvalue to `[π,π]`. To achieve this, one needs to
+> recall that we may shift the grids by half cell due to eveness of the number of cells. So the appropirate way to include such π-shift is to
+> 1. retrieving such eveness-induced half-cell shift by changing `[ϕ1,ϕ2] -> [ϕ1,ϕ2] - π/2*[1-(-1)^T2, 1-(-1)^T1]`
+> 2. adding minus signs to LLL's magnetic translation operators by changing the translation eigenvalues by `α_eigval_over_2π -> α_eigval_over_2π + 1/2`
+
+Note: the integer pair `(k1,k2)` needs to be moded by `T2` and `T1` respectively to ensure that `k` lives within BZ.
+"""
+function _generate_k_int_list_in_LLL_state_order(z::ComplexF64, T_vec::Vector{Int64}, torus_sample::Torus_Sample, LLL_state_list::Vector{Haldane_Rezayi_State}; rotation_angle::Float64)
+    (T1, T2) = Tuple(T_vec)
+    (ϕ1_over_2π, ϕ2_over_2π) = Tuple(torus_sample.phase_twists_over_2π)
+    (δL1, δL2) = Tuple(torus_sample.mag_trans_units)
+    (a1, a2) = (δL1 * T1, δL2 * T2)
+
+    # first, calculate the magnetic translation eigenvalues along two basis-direction
+    a1_eigval_over_2π_list = _magnetic_translation_eigval_over_2π_list(a1, z, LLL_state_list, torus_sample)
+    a2_eigval_over_2π_list = _magnetic_translation_eigval_over_2π_list(a2, z, LLL_state_list, torus_sample)
+
+    "determine if a lattice is C3 or C6 symmetric"
+    @inline function _is_C3_or_C6_symmetric(θ::Float64)::Bool
+        return abs(θ - pi / 3) < ANGLE_ERROR || abs(θ - pi / 6) < ANGLE_ERROR
+    end
+
+    (k1_list, k2_list) =
+        @match _is_C3_or_C6_symmetric(rotation_angle) begin
+            false => begin # if does NOT possess C3 or C6 symmetry: no further compatible condition needs to be considered
+                # use the relation `m_α/N_β = (α_eigval_over_2π) - (ϕ_α/2π)/N_β` to extract the integer tuple
+                k1_list = [mod(round((T2 * α_eigval_over_2π - ϕ1_over_2π), digits=10), T2) for α_eigval_over_2π in a1_eigval_over_2π_list]
+                k2_list = [mod(round((T1 * α_eigval_over_2π - ϕ2_over_2π), digits=10), T1) for α_eigval_over_2π in a2_eigval_over_2π_list]
+                for i in eachindex(LLL_state_list)
+                    @assert @inbounds isinteger(k1_list[i]) && isinteger(k2_list[i]) # ensure that both `k1_list` and `k2_list` are list of integers
+                end
+                (round.(Int, k1_list), round.(Int, k2_list))
+            end
+
+            true => begin # if does possess C3 or C6 symmetry: we need to consider the compatibility between magnetic translation and magnetic rotation
+                # 1. retrieving such eveness-induced half-cell shift by changing `[ϕ1,ϕ2] -> [ϕ1,ϕ2] - π/2*[1-(-1)^T2, 1-(-1)^T1]` 
+                ϕ1_over_2π -= 1 / 4 * (1 - (-1)^T2)
+                ϕ2_over_2π -= 1 / 4 * (1 - (-1)^T1)
+
+                # 2. use the relation `m_α/N_β = (α_eigval_over_2π) + 1/2 - (ϕ_shifted_α/2π)/N_β` to extract the integer tuple
+                k1_list = [mod(round((T2 * (α_eigval_over_2π + 1 / 2) - ϕ1_over_2π), digits=10), T2) for α_eigval_over_2π in a1_eigval_over_2π_list]
+                k2_list = [mod(round((T1 * (α_eigval_over_2π + 1 / 2) - ϕ2_over_2π), digits=10), T1) for α_eigval_over_2π in a2_eigval_over_2π_list]
+                for i in eachindex(LLL_state_list)
+                    @assert @inbounds isinteger(k1_list[i]) && isinteger(k2_list[i]) # ensure that both `k1_list` and `k2_list` are list of integers
+                end
+                (round.(Int, k1_list), round.(Int, k2_list))
+            end
+        end
+    k_int_list_in_LLL_state_order = zip(k1_list, k2_list) .|> collect # convert to Array{Vector{Int64}}
+    return k_int_list_in_LLL_state_order
+end
+
+
+
+"""
+### Relatively Normalize the Bloch Basis (Gauge Fixing)
+with the gauge fixing conditions `t(δL1)|k1,k2⟩=|k1,k2+1⟩` and `t(-δL2)|k1,k2⟩=e^{i2π*k2/Ns+iϕ2/Ns}|k1+1,k2⟩`. 
+> Note: we have `⟨z|ψ_{k1,k2}⟩ ≡ N_{k1,k2} * e^{-(z-z_bar)^2/(8ℓ^2)} * f(z)`
+---
+1. We first implement the gauge-fixing condition along δL2-direction: from `t(-δL2)|k1,k2⟩=e^{i2π*k2/Ns+iϕ2/Ns}|k1+1,k2⟩` we get, by taking `|0,0⟩` as the reference state, that `ln(⟨z|t(-k1*δL2)|0,0⟩/⟨z|0,0⟩) ≡ (log-ratio) = (i2π*0/Ns + im*ϕ2/Ns) * k1 + ln(N_{k1,0}) - ln(N_{0,0}) = im*ϕ2/Ns * k1 + ln(N_{k1,0}) - ln(N_{0,0})`
+2. Then we implement the the gauge fixing condition along δL1-direction: from `t(δL1)|k1,k2⟩=|k1,k2+1⟩` we get, for each value of `k1`, by taking `|k1,0⟩` as the reference state (whose gauge is already fixed), that `ln(⟨z|t(k2*δL1)|k1,0⟩/⟨z|k1,0⟩)≡ (log-ratio) = ln(N_{k1,k2}) - ln(N_{k1,0})`
+
+We use the `log_of_norm_factor_map[k1+1,k2+1]` to save the *relative differences* of the logarithm of the normalization for the state at `k_int=[k1, k2]` (shifted by `[1,1]` since `k_int` start from `[0,0]`) with that of the choosen reference state `ψ_ref`. So extra alignment of `log_of_norm_factor_map[]` based on the normalization of the reference state is necessary to obtain the correct normalization for each state, such that the value of the state, i.e, `abs(exp(_log_of_Haldane_Rezayi_wave_func()))` at a generic z-point is **nearly unity**.
+"""
+function _update_Haldane_Rezayi_state_norm_factor_with_gauge_fixing!(bloch_basis::Bloch_Basis)
+    let
+        (δL1, δL2) = Tuple(bloch_basis.torus_sample.mag_trans_units)
+        (ϕ1_over_2π, ϕ2_over_2π) = bloch_basis.torus_sample.phase_twists_over_2π
+        (T1, T2) = Tuple(bloch_basis.T_vec)
+        Ns = bloch_basis.torus_sample.Ns
+        begin
+            log_of_norm_factor_hashmap = Dict{Vector{Int64},ComplexF64}()
+
+            # take `|0,0⟩` (which has `k_ind=1`) as the initial reference state
+            k_ind_ref = bloch_basis.k_int_to_ind_hashmap[[0, 0]]
+            ψ_ref = bloch_basis.state_list[k_ind_ref]
+
+            # first, relatively normalize along L1-direction
+            for k1 in 0:(T2-1)
+                k_ind = bloch_basis.k_int_to_ind_hashmap[[k1, 0]]
+                ψ = bloch_basis.state_list[k_ind]
+
+                log_of_norm_factor = _log_ratio_between_magnetic_translated_state_and_reference_state(-k1 * δL2, bloch_basis.z_seed, ψ_ref, ψ, bloch_basis.torus_sample)
+                log_of_norm_factor -= im * 2 * pi * k1 * ϕ2_over_2π / Ns
+
+                for k2 in 0:(T1-1)
+                    log_of_norm_factor_hashmap[[k1, k2]] = log_of_norm_factor
+                end
+            end
+
+            # next, relatively normalize along L2-direction for each value of `k1`
+            for k1 in 0:(T2-1)
+                k_ind_tmp = bloch_basis.k_int_to_ind_hashmap[[k1, 0]] # the gauge-fixed reference state
+                ψ_ref_tmp = bloch_basis.state_list[k_ind_tmp]
+                for k2 in 0:(T1-1)
+                    k_ind = bloch_basis.k_int_to_ind_hashmap[[k1, k2]]
+                    ψ = bloch_basis.state_list[k_ind]
+
+                    log_of_norm_factor_hashmap[[k1, k2]] += _log_ratio_between_magnetic_translated_state_and_reference_state(k2 * δL1, bloch_basis.z_seed, ψ_ref_tmp, ψ, bloch_basis.torus_sample)
+                end
+            end
+
+            # then, align the `log_of_norm_factor_map` with the normalization of the reference state `ψ_ref`
+            let k_ind = bloch_basis.k_int_to_ind_hashmap[[0, 0]]
+                map!(x -> x .- log_of_norm_factor_hashmap[[0, 0]], values(log_of_norm_factor_hashmap))
+                map!(x ->
+                        x .- _log_of_holomorphic_part_of_Haldane_Rezayi_wavefunc(bloch_basis.z_seed, bloch_basis.state_list[k_ind], bloch_basis.torus_sample),
+                    values(log_of_norm_factor_hashmap)
+                )
+            end
+
+            # show(stdout, "text/plain", abs.(exp.(values(log_of_norm_factor_hashmap))))
+            # println("\n")
+            for k1 in 0:(T2-1), k2 in 0:(T1-1)
+                k_int = [k1, k2]
+                k_ind = bloch_basis.k_int_to_ind_hashmap[k_int]
+                bloch_basis.state_list[k_ind].log_of_norm_factor = log_of_norm_factor_hashmap[k_int]
+            end
+            return nothing
+        end
+    end
+end
+\end{minted}

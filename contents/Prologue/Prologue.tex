@@ -1,0 +1,103 @@
+\section{General Prologue}
+    \subsection{Introduction}
+        Condensed matter physics is a subject about \emph{phases}. In fact, the central topics of condensed matter physics are
+        \begin{enumerate}
+            \item to discover novel quantum state of phases;
+            \item to understand the intricate phase transitions among them.
+        \end{enumerate}
+        Clearly it is sensible to talk about the transitions between phases only \emph{after} we get to know what exactly theses phases are.
+        
+        The concept of phases is developing along with the growth of condensed matter physics in the past centry. There are two milestones: the concept of \emph{Landau fermi liquid} and the phenomena of \emph{spontaneous symmetry breakings}. Landau fermi liquid theory adiabatically connects the interacting electronic fluids with the non-interacting electron gas, with introduction of \emph{quasiparticles} [Landau, Abrikosov]. Quasiparticles has become the most fundenmental object to describe the weakly-interacting systems. This object is so universal that it was believed to constitute our real world at every energy scales. In the pioneering paper of Anderson \cite{anderson1972more}, the philosophy of \emph{emergence} was first proposed, as an independent declaration of condensed matter physics, wherein spontaneous symmetry breaking is explained as the fundamental mechanism for the emergent behavior of quasiparticles at different energy scales.
+
+        Spontaneous symmetry breaking is really not a new concept: it occurs everyday in our normal life. Taking water as the example, as a normal fluid it is continuously translational-invariant and isotropic, or has $\mathbb R^3\times\mathrm{O}(3)$ symmetry in the language of group theory. When cooling down below the freezing point, solid ice will be formed, leaving just discrete translation symmetry and discrete rotation symmetries.
+
+
+        Due to the early success in explanation of Fermi liquid \cite{landau1959theory}, He-II superfluidity \cite{landau1941theory}, and BCS superconductivity \cite{bardeen1957theory}\cite{bardeen1957microscopic}, it has been a long time for people to believe that the combined paradigm of Landau fermi liquid theory (with quasiparticles) and spontaneous symmetry breaking, tells the whole story of condensed matter theory. With the help of renormalization group (RG) analysis, people at that time even tends to believe that everything in condensed matter physics is predictable, as long as the quasiparticle properties and system symmetries are given.
+
+        However, the subsequntly discoveries of unconventional high-$T_c$ superconductivity beyong BCS theory, from cuprates \cite{bednorz1986possible}, to iron-based superconductors \cite{kamihara2006iron} and Nickel-based superconductors \cite{li2019superconductivity}, from bulk materials like YBCO [] and BiSSCO [] to thin-film materials like monolayer FeSe \cite{liu2012electronic} and twisted bilayer graphene (tBLG) \cite{cao2018correlated}\cite{cao2018unconventional}, have all declared the breakdown of quasiparticle pictures. And the discoveries of integer quantum Hall effect (IQHE) \cite{klitzing1980new} and fractional quantum Hall effect (FQHE) \cite{tsui1982two}\cite{willett1987observation}, together with the following proposals and realizations on the huge family of topological insulators (TI) \cite{bernevig2006quantum}\cite{hsieh2008topological} and topological superconductors \cite{xu2014artificial}, have all revealed the importance of \emph{topology} in condensed matter physics, which has been longly overlooked by the traditional paradigm of Landau fermi liquid thoery and spontaneous symmetry breakings. Particularly, nowadays \emph{topological orders} \cite{wen1990topological}\cite{levin2005string}\cite{chen2010local}\cite{wen2002quantum}, first proposed by Wen in understanding of the ground state degeneracy in FQHE \cite{wen1990ground}, has become the fundamental language in describing and classification of these phenomena. And the interplay between topological orders and \emph{symmetries} has been further developed into a vast framework classifying all quatum phases of matter in our universe, including \emph{symmetry-protected topological trivial states (SPT)} \cite{chen2013symmetry} and \emph{symmetry-enriched topological orders states (SET)} \cite{mesaros2013classification}.
+
+        It can be seen that the concept of phases in condensed matter physics has been highly complexified due to the interplay of symmetry, topology, and strong-correlations. In this thesis, I will focus on the study of the quantum phases of matter in two-dimensional (2D) space, particularly in the context of the \emph{twisted} 2D materials exhibiting all these complexities. The thesis is organized as follows: In the beginning, I will generally introduce the complexity brought by dimensionality (particularly 2D), symmetry and topology. I will take graphene and transition metal dichalcogenides as two typical examples of 2D materials, and discuss the complexity carried by the new tunability of twisting angles, especially \emph{Moire physics}. Then as the main part of the thesis, I will list three of my works on twisted 2D materials. The former two works are about 2D superconductors, where complexities of free-fermion topology, symmetries, and twistings are involved. The other recent long work is for \emph{fractional Chern insulators} (FCI), the lattice analogue of FQHE. In construction of the framework, all factors of complexity mentioned above get intertwined, including Moire physics, strong correlations, and symmetry-enriched topological orders.
+
+    \subsection{Complexity from Dimensionality: 2D}
+        In this section, I will briefly discuss the complexity of the condensed matter systems from the perspective of dimensionality. Particularly, I will focus on the two-dimensional systems, as it is the main topic of this thesis. \textbf{[todo!]}
+        \begin{itemize}
+            \item \textbf{Statistics in 2D: Anyons.} The most famous example exhibiting the particularity of the two-dimensional space is on the classification of elementary particles. The modern thoery explaining the statistics of elementary particles is to consider the \emph{dynamic process of braiding} \cite{laidlaw1971feynman}\cite{wu1984general}. In path-integral formalism, it is 
+            \begin{equation*}
+                _f\langle \{\bm x_N\}|\{\bm x_N\}\rangle_i\equiv\int_{\gamma}\mathcal D\{\bm x_N\}\, e^{iS[\{\bm x_N\}]}=\sum_{[\gamma]\in\pi_1(M_N)}\chi([\gamma])\int_{\gamma\in[\gamma]}\mathcal D\{\bm x_N\}\, e^{iS[\{\bm x_N\}]}.
+            \end{equation*}
+            Here we sum up all paths $\gamma\in M_N$ of the conﬁguration space $M_N$ connecting the initial/ﬁnal states. We further grouped them into topologically inequivalent sectors, classiﬁed by the ﬁrst homotopy class $\pi_1(M_N)$. 
+
+            Clearly $M_N\subset\mathbb R^{Nd}=\mathbb R^d\times\cdots\times\mathbb R^d$ is the subspace of the full $N$-particle configuration space. Now because we are interested in the braiding processes only, all the trivial configurations that have particles occupying the same positions $\Delta=\{(\bm x_1,\cdots,\bm x_N)|\exists i\neq j, \bm x_i=\bm x_j\}$ should be excluded. Due to the indistinguishability of $N$-particles, any mutual exchange (relabeling) of particles described by the permutation group $S_N$ should be considered as the same configuration . As a result, the configuration space $M_N=(\mathbb R^{Nd}\backslash \Delta)/S_N$. Depending on the spatial-dimensionality, we have the following results \cite{wu1984general}:
+            \begin{itemize}
+                \item In $d=1$: there is no sense to talk about braiding operations.
+                \item In $d=2$: $\pi_1(M_N)=B_N\equiv\langle\sigma_1\cdots\sigma_{n-1}|\sigma_i\sigma_j=\sigma_j\sigma_i,\sigma_i \sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i \sigma_{i+1}\rangle$ is the \emph{braid group}.
+                \item In $d\geq3$: $\pi_1(M_N)=S_N\equiv\langle\sigma_1\cdots\sigma_{n-1}|\sigma_i^2=1,\sigma_i\sigma_j=\sigma_j\sigma_i,\sigma_i \sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i \sigma_{i+1}\rangle$ is the \emph{permutation group}.
+            \end{itemize}
+            For one-dimension representations $\rho:\sigma_i\mapsto e^{i\theta_i}$, the presentation constraints shared by $S_N$ and $B_N$ simply tells $\theta_i=\theta_{i+1}=\theta$. Relation $\sigma_i^2=1$ in $S_N$ futher fixes $\theta=0,\pi$, or weight $\chi_\pm([\alpha])=\pm1$ as the sign of the permutations, explaining the \emph{spin-statistics theorem} or the origin of bosons/fermions in $(3+1)$-d field theory. For braid group, however, $\chi_\theta([\alpha])=e^{i\theta}$ can be chosen arbitrarily. Each abelian representation $\chi_\theta$ corresponds to one \emph{abelian anyons} [Wilczek].
+
+            The above argument \emph{implicitly assume that the Hilbert space of a collection of particles at specified positions is one-dimensional}. If we release that assumption by considering a many-particle state with extra $\mathcal D$-degeneracy (the \emph{total quantum dimension} \cite{kitaev2006topological}\cite{levin2006detecting}) apart from the degeneracy in conventional sense such as single-particle's spin/flavor/valley/band indices, then the amplitude between the initial/final states becomes
+            \begin{equation*}
+                _f\langle\{\bm x_N\},n|\{\bm x_N\},n'\rangle_i=\sum_{[\gamma]\in\pi_1(M)}\chi_{nn'}([\gamma])\int_{\gamma\in[\gamma]}\mathcal D\{\bm x_N\}\, e^{iS[\{\bm x_N\}]},
+            \end{equation*}
+            where $\mathcal D$-dimensional non-abelian representation $\chi:\pi_1(M_N)\rightarrow\mathrm{GL}_{\mathcal D}(V)$ enters. In two-dimensional space, $\chi: B_N\rightarrow\mathrm{GL}_{\mathcal D}(V)$ gives the classification of \emph{non-abelian anyons}\footnote{The \emph{parastatistics}, named for non-abelian representation of higher dimensional space, though exits in mathematical sense, is excluded in the path integral formalism in the long proof of Ref. \cite{laidlaw1971feynman}}. Besisdes the non-abelian mutual statistics, there is another intrinsic property called the \emph{fusion rules} $\phi_a\star\phi_b=\sum_c N^c_{ab}\phi_c$ by considering the composite particle . As an appreciation of the complexity in 2D, it is enough to pause the discussion here.
+
+            \item \textbf{Disorder in 2D: Scaling Theory to Weak Localization.} In the seminal paper by "the gang of four" Abrahams, Anderson, Licciardello, and Ramakrishnan in Ref. \cite{abrahams1979scaling}, a scaling theory is constructed with the strong hypothesis that the change of the conductance $G$ with the length scale $L$ depends solely on the conductance at previous length scales, and not, for example, independently on $L$ or on the strength of the disorder. The RG equation for the conductance is then a single-parameter scaling equation
+            \begin{equation*}
+                \dfrac{\mathrm d\ln G}{\mathrm d\ln L}=\beta(G(L)).
+            \end{equation*}
+            In the weak disorder limit $G\gg1$ where Ohm's law is expected to hold (or microscopically the diffusive Drude physics dominates), the conductance $G=1/R=\sigma\frac{L}{A}\sim\sigma L^{2-d}$, giving
+            \begin{equation*}
+                \lim_{\ln G\rightarrow\infty}\beta(G)=d-2.
+            \end{equation*}
+            While in the strong disorder limit $G\ll1$ where Anderson's strong-disorder perturbation thory [] holds, and the conductance should drop off exponentially with the system size $G(L)=G_0 e^{-L/\xi}$, or
+            \begin{equation*}
+                \lim_{\ln G\rightarrow-\infty}\beta(G)=-\frac{L}{\xi}\simeq\ln G\rightarrow-\infty.
+            \end{equation*}
+            Naive smooth connection of these two limit regimes tells that (see Fig.[])
+            \begin{itemize}
+                \item In $d=1$: $\beta(G)<0$ and the system will always flow to the insulating regime.
+                \item In $d=2$: marginal case.
+                \item In $d=3$: there is one critical point $G_c$ above which the system will flow to the metallic regime, and below which the system will flow to the insulating regime.
+            \end{itemize}
+        \end{itemize}
+
+    \subsection{Complexity from Symmetry and Topology}
+        \subsubsection{Free fermion Topology: Example of 10-fold Way}
+
+        \subsubsection{Symmetry Enrichment: SPT and SET}
+
+\section{2D Materials}
+    \subsection{Graphene and Transition Metal Dichalcogenides (TMD)}
+        \subsubsection{Graphene}
+            Historically, there exists many arguments claiming the non-existence of 2D materials due to the instability under finite thermal fluctuations\footnote{For example, a naive (so \emph{wrong}) entropy argument goes as following: Note that 2D material has less vibration modes than 3D materials of the same particle number, the entropy contribution from these vibration modes should be smaller in 2D, so is not entropy-favored.}, and even Lev Landau made mistakes here\footnote{Landau claim the non-existence based on the experimental facts that no divergence has been observed under a disorder to order (like liquid to crystal) phase transition.}. All of these arguments are disputed by the discovery of graphene in 2004 by Geim and Novoselov \cite{novoselov2004electric}. And the realistic two-dimensional world has been opened since then.
+
+            Graphene is well-known for the appearance of Dirac points in its band structure. For the honeycomb lattice constituted of carbon atoms only, there exists sublattice (inversion) symmetry between $A,B$ sublattices. For spinless electrons, where Hamiltonian is written in such pseudospin basis as a general two-by-two matrix $H(\bm k)=\bm d(\bm k)\cdot\bm \tau$ with real vector coefficients $\bm d(\bm k)$, the inversion operator $\mathcal P$ exchanging $A,B$ sites can be represented as $P=\tau_x$. Graphene also possesses time-reversal symmetry, and for spinless electrons the time-reversal operator is simply a complex conjugate $T=K$. Therefore, the combination of inversion symmetry and time-reversal symmetry keeping the momentum unchanged: $\mathcal P\mathcal T:\bm k\mapsto\bm k$, requires the Hamiltonian to satisfy 
+            \begin{equation*}
+                \tau_x^{-1}H^*(\bm k)\tau_x=H(\bm k),
+            \end{equation*}
+            implying $d_3(\bm k)=0$ or $H(\bm k)=d_1(\bm k)\tau_x+d_2(\bm k)\tau_y$ with ALL matrix element off-diagonal. Now because both the momentum dimension and the Hamiltonian dimension are the same, so \emph{given one zero solution of the eigen equation $\det|\lambda I-H(\bm k)|=0$, any perturbation preserving the inversion and time-reversal symmetries, i.e., constituted of $\tau_x$ and $\tau_y$ matrices, cannot destroy such zero point}. That is the typical example of symmetry-protected Dirac points (if exists) in graphene.
+
+            To demonstrate the presense of Dirac points, we can look at the $C_3$ rotation symmetry. Suppose the rotation eigenvalue for basis $A$ at $K$-point $C_3|K,A\rangle=e^{i2\pi/3}|K,A\rangle$. Due to the operator idensity $PC_3P=C_3^{-1}$ one has $C_3|K,B\rangle=e^{-i2\pi/3}|K,B\rangle$ and thus $C_3=\mathrm{diag}\{e^{i2\pi/3},e^{-i2\pi/3}\}$. Then from $C_3^{-1}H(\bm K)C_3=H(C_3^{-1}\bm K)=H(\bm K)$ the off-diagonal elements of the Hamiltonian must be vanishing. But as we have seen above, the two-by-two Hamiltonian with inversion and time-reversal symmetry only has off-diagonal terms from $\tau_x$ and $\tau_y$, thus at the $C_3$-invariant point $K$ and $K'$ the Hamiltonian are exactly zero --- that's where Dirac points locate. Note: these Dirac points can move away from $K$ and $K'$ when $C_3$ is broken, but the presence is kept as long as inversion and time-reversal are still preserved. 
+            
+            The low-energy effective Hamiltonian around $K$ and $K'$ can be obtained with the invaraint methods in $\bm k\cdot\bm p$ expansion. Expanding around $K$ point to linear-order (the zeroth order is zero), i.e., $H=\begin{pmatrix}0 & \alpha k_x+\beta k_y \\ \alpha^* k_x+\beta^* k_y & 0\end{pmatrix}$, then from the rotation transformation $C_3^{-1}H(\bm k)C_3=H(C_3^{-1}\bm k)$, one gets $e^{-i4\pi/3}(\alpha k_x+\beta k_y)=(\alpha C_3^{-1}k_x+\beta C_3^{-1}ky)$, or $\beta=i\alpha$, giving the well-known Dirac cone Hamiltonian
+            \begin{equation}
+                H_K(\bm k)=\hbar v_F\bm k\cdot\bm\tau.
+            \end{equation}
+
+
+
+        \subsubsection{Transition Metal Dichalcogenides}
+            Apart from the typical example graphene, there are also growing interests in other atomically thin 2D material for their potential application in next-generation of nano devices. In particular, transition-metal dichalcogenides (TMD), represent a huge class of materials that can be shaped into monolayers.
+
+            TMDs of chemical formula $\mathrm{MX}_2$, typically comprise a plane having hexagonally-placed transition metal atoms M (groups 4 to 10) placed between two chalcogen atom-based hexagonal planes X (e.g., S, Se, Te). The M-X bonds within layers are mostly covalent, while weak Van der Waals forces hold the sandwiched layers.
+
+            Taking the prototypical group-VI dichalcogenide as the example, for example $\mathrm{MoS_2}$, a nice feature of 
+
+    \subsection{Complexity from Twisting}
+        \subsubsection{Twisting Cuprates}
+
+
+    \subsection{Complexity from Moire Physics}
+        \subsection{Twisted Bilayer Graphene}
+            
+        \subsection{Twisted TMD}

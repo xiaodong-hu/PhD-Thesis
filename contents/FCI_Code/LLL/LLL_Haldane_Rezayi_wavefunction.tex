@@ -1,0 +1,31 @@
+\begin{minted}[linenos, breaklines, mathescape, numbersep=5pt, frame=lines, framesep=2mm]{julia}
+"""
+### *Logarithm* of the holomorphic part of the Haldane-Rezayi wave function 
+> Note: the normalization factor of Haldane-Rezayi wavefunction also belongs to the holomorphic part
+---
+Namely `ln(ψ(z))≡ln(⟨z|ψ⟩) ≡ ln(Gaussian) + log(holomorphic)`, where `ln(holomorphic)≡ln(N)+ln(f(z))`, and 
+```
+ln(f(z)) = ln(e^{im*k*z}) log(∏_{ν=1}^N_s ϑ_1((z-z_ν)*π/L1, τ)) = im*k*z + ∑_{ν=1}^N_s ln(ϑ_1((z-z_ν)*π/L1, τ)),
+```
+see `PhysRevB.31.2529` for the explicit form.
+"""
+@inline function _log_of_holomorphic_part_of_Haldane_Rezayi_wavefunc(z::ComplexF64, ψ::Haldane_Rezayi_State, torus_sample::Torus_Sample)
+    res = im * 2 * pi * ψ.k_over_2π * z
+    for zν in ψ.zν_list
+        q_nome = exp(im * pi * torus_sample.τ) # `q` is the so-called *nome* of the elliptic theta function `ϑ_1(z,q)` defined as `q=e^{im*π*τ}`, see https://en.wikipedia.org/wiki/Theta_function
+        res += EllipticFunctions.ljtheta1(pi * (z - zν) / torus_sample.L1, q_nome) # `EllipticFunctions.ljtheta1` is the **Logarithm** of the elliptic theta function `ln(ϑ_1(z,q))`
+    end
+    res += ψ.log_of_norm_factor
+    return res
+end
+
+"""
+### *Logarithm* of the Haldane-Rezayi Wave Function
+> Namely the logarithm of *both* holomorphic part and Gaussian part `e^{-(z-z_bar)^2/(8ℓ^2)}`
+---
+`ln(ψ(z))≡ln(⟨z|ψ⟩) = ln(e^{-(z-z_bar)^2/(8ℓ^2)}) + log(N) + ln(f(z))`
+"""
+function _log_of_Haldane_Rezayi_wavefunc(z::ComplexF64, ψ::Haldane_Rezayi_State, torus_sample::Torus_Sample)
+    return -imag(z)^2 / (2 * torus_sample.ℓ^2) + _log_of_holomorphic_part_of_Haldane_Rezayi_wavefunc(z, ψ, torus_sample)
+end
+\end{minted}
