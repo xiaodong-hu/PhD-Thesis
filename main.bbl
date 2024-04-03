@@ -1,0 +1,193 @@
+\begin{thebibliography}{10}
+
+\bibitem{manzeli20172d}
+Sajedeh Manzeli, Dmitry Ovchinnikov, Diego Pasquier, Oleg~V Yazyev, and Andras Kis.
+\newblock 2d transition metal dichalcogenides.
+\newblock {\em Nature Reviews Materials}, 2(8):1--15, 2017.
+
+\bibitem{xiao2012coupled}
+Di~Xiao, Gui-Bin Liu, Wanxiang Feng, Xiaodong Xu, and Wang Yao.
+\newblock Coupled spin and valley physics in monolayers of mos 2 and other group-vi dichalcogenides.
+\newblock {\em Physical Review Letters}, 108(19):196802, 2012.
+
+\bibitem{anderson1972more}
+Philip~W Anderson.
+\newblock More is different: Broken symmetry and the nature of the hierarchical structure of science.
+\newblock {\em Science}, 177(4047):393--396, 1972.
+
+\bibitem{landau1959theory}
+LD~Landau.
+\newblock On the theory of the fermi liquid.
+\newblock {\em Sov. Phys. JETP}, 8(1):70, 1959.
+
+\bibitem{landau1941theory}
+L~Landau.
+\newblock Theory of the superfluidity of helium ii.
+\newblock {\em Physical Review}, 60(4):356, 1941.
+
+\bibitem{bardeen1957theory}
+John Bardeen, Leon~N Cooper, and John~Robert Schrieffer.
+\newblock Theory of superconductivity.
+\newblock {\em Physical review}, 108(5):1175, 1957.
+
+\bibitem{bardeen1957microscopic}
+John Bardeen, Leon~N Cooper, and J~Robert Schrieffer.
+\newblock Microscopic theory of superconductivity.
+\newblock {\em Physical Review}, 106(1):162, 1957.
+
+\bibitem{bednorz1986possible}
+J~George Bednorz and K~Alex M{\"u}ller.
+\newblock Possible high t c superconductivity in the ba- la- cu- o system.
+\newblock {\em Zeitschrift f{\"u}r Physik B Condensed Matter}, 64(2):189--193, 1986.
+
+\bibitem{kamihara2006iron}
+Yoichi Kamihara, Hidenori Hiramatsu, Masahiro Hirano, Ryuto Kawamura, Hiroshi Yanagi, Toshio Kamiya, and Hideo Hosono.
+\newblock Iron-based layered superconductor: Laofep.
+\newblock {\em Journal of the American Chemical Society}, 128(31):10012--10013, 2006.
+
+\bibitem{li2019superconductivity}
+Danfeng Li, Kyuho Lee, Bai~Yang Wang, Motoki Osada, Samuel Crossley, Hye~Ryoung Lee, Yi~Cui, Yasuyuki Hikita, and Harold~Y Hwang.
+\newblock Superconductivity in an infinite-layer nickelate.
+\newblock {\em Nature}, 572(7771):624--627, 2019.
+
+\bibitem{liu2012electronic}
+Defa Liu, Wenhao Zhang, Daixiang Mou, Junfeng He, Yun-Bo Ou, Qing-Yan Wang, Zhi Li, Lili Wang, Lin Zhao, Shaolong He, et~al.
+\newblock Electronic origin of high-temperature superconductivity in single-layer fese superconductor.
+\newblock {\em Nature Communications}, 3(1):1--6, 2012.
+
+\bibitem{cao2018correlated}
+Yuan Cao, Valla Fatemi, Ahmet Demir, Shiang Fang, Spencer~L Tomarken, Jason~Y Luo, Javier~D Sanchez-Yamagishi, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, et~al.
+\newblock Correlated insulator behaviour at half-filling in magic-angle graphene superlattices.
+\newblock {\em Nature}, 556(7699):80--84, 2018.
+
+\bibitem{cao2018unconventional}
+Yuan Cao, Valla Fatemi, Shiang Fang, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, and Pablo Jarillo-Herrero.
+\newblock Unconventional superconductivity in magic-angle graphene superlattices.
+\newblock {\em Nature}, 556(7699):43--50, 2018.
+
+\bibitem{klitzing1980new}
+K~v Klitzing, Gerhard Dorda, and Michael Pepper.
+\newblock New method for high-accuracy determination of the fine-structure constant based on quantized hall resistance.
+\newblock {\em Physical review letters}, 45(6):494, 1980.
+
+\bibitem{tsui1982two}
+Daniel~C Tsui, Horst~L Stormer, and Arthur~C Gossard.
+\newblock Two-dimensional magnetotransport in the extreme quantum limit.
+\newblock {\em Physical Review Letters}, 48(22):1559, 1982.
+
+\bibitem{willett1987observation}
+Robert Willett, James~P Eisenstein, Horst~L St{\"o}rmer, Daniel~C Tsui, Arthur~C Gossard, and JH~English.
+\newblock Observation of an even-denominator quantum number in the fractional quantum hall effect.
+\newblock {\em Physical review letters}, 59(15):1776, 1987.
+
+\bibitem{bernevig2006quantum}
+B~Andrei Bernevig, Taylor~L Hughes, and Shou-Cheng Zhang.
+\newblock Quantum spin hall effect and topological phase transition in hgte quantum wells.
+\newblock {\em science}, 314(5806):1757--1761, 2006.
+
+\bibitem{hsieh2008topological}
+David Hsieh, Dong Qian, Lewis Wray, Yiman Xia, Yew~San Hor, Robert~Joseph Cava, and M~Zahid Hasan.
+\newblock A topological dirac insulator in a quantum spin hall phase.
+\newblock {\em Nature}, 452(7190):970--974, 2008.
+
+\bibitem{xu2014artificial}
+Jin-Peng Xu, Canhua Liu, Mei-Xiao Wang, Jianfeng Ge, Zhi-Long Liu, Xiaojun Yang, Yan Chen, Ying Liu, Zhu-An Xu, Chun-Lei Gao, et~al.
+\newblock Artificial topological superconductor by the proximity effect.
+\newblock {\em Physical Review Letters}, 112(21):217001, 2014.
+
+\bibitem{wen1990topological}
+Xiao-Gang Wen.
+\newblock Topological orders in rigid states.
+\newblock {\em International Journal of Modern Physics B}, 4(02):239--271, 1990.
+
+\bibitem{levin2005string}
+Michael~A Levin and Xiao-Gang Wen.
+\newblock String-net condensation: A physical mechanism for topological phases.
+\newblock {\em Physical Review B}, 71(4):045110, 2005.
+
+\bibitem{chen2010local}
+Xie Chen, Zheng-Cheng Gu, and Xiao-Gang Wen.
+\newblock Local unitary transformation, long-range quantum entanglement, wave function renormalization, and topological order.
+\newblock {\em Physical review b}, 82(15):155138, 2010.
+
+\bibitem{wen2002quantum}
+Xiao-Gang Wen.
+\newblock Quantum orders and symmetric spin liquids.
+\newblock {\em Physical Review B}, 65(16):165113, 2002.
+
+\bibitem{wen1990ground}
+Xiao-Gang Wen and Qian Niu.
+\newblock Ground-state degeneracy of the fractional quantum {Hall} states in the presence of a random potential and on high-genus riemann surfaces.
+\newblock {\em Physical Review B}, 41(13):9377, 1990.
+
+\bibitem{chen2013symmetry}
+Xie Chen, Zheng-Cheng Gu, Zheng-Xin Liu, and Xiao-Gang Wen.
+\newblock Symmetry protected topological orders and the group cohomology of their symmetry group.
+\newblock {\em Physical Review B}, 87(15):155114, 2013.
+
+\bibitem{mesaros2013classification}
+Andrej Mesaros and Ying Ran.
+\newblock Classification of symmetry enriched topological phases with exactly solvable models.
+\newblock {\em Physical Review B}, 87(15):155115, 2013.
+
+\bibitem{laidlaw1971feynman}
+Michael~GG Laidlaw and Cecile~Morette DeWitt.
+\newblock Feynman functional integrals for systems of indistinguishable particles.
+\newblock {\em Physical Review D}, 3(6):1375, 1971.
+
+\bibitem{wu1984general}
+Yong-Shi Wu.
+\newblock General theory for quantum statistics in two dimensions.
+\newblock {\em Physical Review Letters}, 52(24):2103, 1984.
+
+\bibitem{wilczek1982quantum}
+Frank Wilczek.
+\newblock Quantum mechanics of fractional-spin particles.
+\newblock {\em Physical review letters}, 49(14):957, 1982.
+
+\bibitem{kitaev2006topological}
+Alexei Kitaev and John Preskill.
+\newblock Topological entanglement entropy.
+\newblock {\em Physical review letters}, 96(11):110404, 2006.
+
+\bibitem{levin2006detecting}
+Michael Levin and Xiao-Gang Wen.
+\newblock Detecting topological order in a ground state wave function.
+\newblock {\em Physical review letters}, 96(11):110405, 2006.
+
+\bibitem{abrahams1979scaling}
+Elihu Abrahams, PW~Anderson, DC~Licciardello, and TV~Ramakrishnan.
+\newblock Scaling theory of localization: Absence of quantum diffusion in two dimensions.
+\newblock {\em Physical Review Letters}, 42(10):673, 1979.
+
+\bibitem{chen2011classification}
+Xie Chen, Zheng-Cheng Gu, and Xiao-Gang Wen.
+\newblock Classification of gapped symmetric phases in one-dimensional spin systems.
+\newblock {\em Physical review b}, 83(3):035107, 2011.
+
+\bibitem{novoselov2004electric}
+Kostya~S Novoselov, Andre~K Geim, Sergei~V Morozov, De-eng Jiang, Yanshui Zhang, Sergey~V Dubonos, Irina~V Grigorieva, and Alexandr~A Firsov.
+\newblock Electric field effect in atomically thin carbon films.
+\newblock {\em science}, 306(5696):666--669, 2004.
+
+\bibitem{mak2010atomically}
+Kin~Fai Mak, Changgu Lee, James Hone, Jie Shan, and Tony~F Heinz.
+\newblock Atomically thin mos 2: a new direct-gap semiconductor.
+\newblock {\em Physical review letters}, 105(13):136805, 2010.
+
+\bibitem{splendiani2010emerging}
+Andrea Splendiani, Liang Sun, Yuanbo Zhang, Tianshu Li, Jonghwan Kim, Chi-Yung Chim, Giulia Galli, and Feng Wang.
+\newblock Emerging photoluminescence in monolayer mos2.
+\newblock {\em Nano letters}, 10(4):1271--1275, 2010.
+
+\bibitem{mattheiss1973band}
+Li~F Mattheiss.
+\newblock Band structures of transition-metal-dichalcogenide layer compounds.
+\newblock {\em Physical Review B}, 8(8):3719, 1973.
+
+\bibitem{bistritzer2011moire}
+Rafi Bistritzer and Allan~H MacDonald.
+\newblock Moir{\'e} bands in twisted double-layer graphene.
+\newblock {\em Proceedings of the National Academy of Sciences}, 108(30):12233--12237, 2011.
+
+\end{thebibliography}
