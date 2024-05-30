@@ -1,47 +1,57 @@
 This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: contents/Prologue/Prologue.aux
+A level-1 auxiliary file: prefaces/abstract.aux
+A level-1 auxiliary file: prefaces/pub_list.aux
+A level-1 auxiliary file: prefaces/acknowledge.aux
+A level-1 auxiliary file: contents/Introduction/Introduction.aux
+A level-1 auxiliary file: contents/Background/background.aux
+A level-1 auxiliary file: contents/FCI_ProjWfc/FCI_ProjWfc.aux
+A level-1 auxiliary file: contents/SATHE/SATHE.aux
+A level-1 auxiliary file: contents/Ising_Top/Ising_Top.aux
 The style file: unsrt.bst
+Reallocated field_info (elt_size=8) to 10520 items from 5000.
 Database file #1: hxd.bib
-You've used 38 entries,
+Warning--empty journal in ledwith2021lecture
+You've used 240 entries,
             1791 wiz_defined-function locations,
-            697 strings with 10282 characters,
-and the built_in function-call counts, 9284 in all, are:
-= -- 752
-> -- 527
-< -- 0
-+ -- 191
-- -- 153
-* -- 817
-:= -- 1568
-add.period$ -- 114
-call.type$ -- 38
-change.case$ -- 38
+            1642 strings with 50801 characters,
+and the built_in function-call counts, 60483 in all, are:
+= -- 4632
+> -- 4045
+< -- 1
++ -- 1441
+- -- 1201
+* -- 5387
+:= -- 10399
+add.period$ -- 718
+call.type$ -- 240
+change.case$ -- 235
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 342
-empty$ -- 857
-format.name$ -- 153
-if$ -- 1955
+cite$ -- 241
+duplicate$ -- 2151
+empty$ -- 5279
+format.name$ -- 1201
+if$ -- 12611
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 38
-newline$ -- 193
-num.names$ -- 38
-pop$ -- 38
+int.to.str$ -- 240
+missing$ -- 243
+newline$ -- 1201
+num.names$ -- 239
+pop$ -- 309
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 121
+skip$ -- 769
 stack$ -- 0
-substring$ -- 686
-swap$ -- 38
-text.length$ -- 0
+substring$ -- 4056
+swap$ -- 248
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 90
-width$ -- 40
-write$ -- 420
+warning$ -- 1
+while$ -- 537
+width$ -- 243
+write$ -- 2613
+(There was 1 warning)

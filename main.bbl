@@ -1,4 +1,49 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
+
+\bibitem{stormer1999fractional}
+Horst~L Stormer, Daniel~C Tsui, and Arthur~C Gossard.
+\newblock The fractional quantum hall effect.
+\newblock {\em Reviews of Modern Physics}, 71(2):S298, 1999.
+
+\bibitem{zeng2015quantum}
+Bei Zeng, Xie Chen, Duan-Lu Zhou, and Xiao-Gang Wen.
+\newblock Quantum information meets quantum matter--from quantum entanglement to topological phase in many-body systems.
+\newblock {\em arXiv preprint arXiv:1508.02595}, 2015.
+
+\bibitem{can2021high}
+Oguzhan Can, Tarun Tummuru, Ryan~P Day, Ilya Elfimov, Andrea Damascelli, and Marcel Franz.
+\newblock High-temperature topological superconductivity in twisted double-layer copper oxides.
+\newblock {\em Nature Physics}, 17(4):519--524, 2021.
+
+\bibitem{volkov2023magic}
+Pavel~A Volkov, Justin~H Wilson, Kevin~P Lucht, and JH~Pixley.
+\newblock Magic angles and correlations in twisted nodal superconductors.
+\newblock {\em Physical Review B}, 107(17):174506, 2023.
+
+\bibitem{zhou2021high}
+Xingjiang Zhou, Wei-Sheng Lee, Masatoshi Imada, Nandini Trivedi, Philip Phillips, Hae-Young Kee, P{\"a}ivi T{\"o}rm{\"a}, and Mikhail Eremets.
+\newblock High-temperature superconductivity.
+\newblock {\em Nature Reviews Physics}, 3(7):462--465, 2021.
+
+\bibitem{cao2018unconventional}
+Yuan Cao, Valla Fatemi, Shiang Fang, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, and Pablo Jarillo-Herrero.
+\newblock Unconventional superconductivity in magic-angle graphene superlattices.
+\newblock {\em Nature}, 556(7699):43--50, 2018.
+
+\bibitem{xie2021fractional}
+Yonglong Xie, Andrew~T Pierce, Jeong~Min Park, Daniel~E Parker, Eslam Khalaf, Patrick Ledwith, Yuan Cao, Seung~Hwan Lee, Shaowen Chen, Patrick~R Forrester, et~al.
+\newblock Fractional {Chern} insulators in magic-angle twisted bilayer graphene.
+\newblock {\em Nature}, 600(7889):439--443, 2021.
+
+\bibitem{cai2023signatures}
+Jiaqi Cai, Eric Anderson, Chong Wang, Xiaowei Zhang, Xiaoyu Liu, William Holtzmann, Yinong Zhang, Fengren Fan, Takashi Taniguchi, Kenji Watanabe, et~al.
+\newblock Signatures of fractional quantum anomalous {Hall} states in twisted $\mathrm{MoTe}_2$.
+\newblock {\em Nature}, 622(7981):63--68, 2023.
+
+\bibitem{park2023observation}
+Heonjoon Park, Jiaqi Cai, Eric Anderson, Yinong Zhang, Jiayi Zhu, Xiaoyu Liu, Chong Wang, William Holtzmann, Chaowei Hu, Zhaoyu Liu, et~al.
+\newblock Observation of fractionally quantized anomalous {Hall} effect.
+\newblock {\em Nature}, 622(7981):74--79, 2023.
 
 \bibitem{manzeli20172d}
 Sajedeh Manzeli, Dmitry Ovchinnikov, Diego Pasquier, Oleg~V Yazyev, and Andras Kis.
@@ -10,65 +55,35 @@ Di~Xiao, Gui-Bin Liu, Wanxiang Feng, Xiaodong Xu, and Wang Yao.
 \newblock Coupled spin and valley physics in monolayers of mos 2 and other group-vi dichalcogenides.
 \newblock {\em Physical Review Letters}, 108(19):196802, 2012.
 
-\bibitem{anderson1972more}
-Philip~W Anderson.
-\newblock More is different: Broken symmetry and the nature of the hierarchical structure of science.
-\newblock {\em Science}, 177(4047):393--396, 1972.
+\bibitem{ramasubramaniam2012large}
+Ashwin Ramasubramaniam.
+\newblock Large excitonic effects in monolayers of molybdenum and tungsten dichalcogenides.
+\newblock {\em Physical Review B}, 86(11):115409, 2012.
 
-\bibitem{landau1959theory}
-LD~Landau.
-\newblock On the theory of the fermi liquid.
-\newblock {\em Sov. Phys. JETP}, 8(1):70, 1959.
+\bibitem{jain2007composite}
+Jainendra~K Jain.
+\newblock {\em Composite fermions}.
+\newblock Cambridge University Press, 2007.
 
-\bibitem{landau1941theory}
-L~Landau.
-\newblock Theory of the superfluidity of helium ii.
-\newblock {\em Physical Review}, 60(4):356, 1941.
+\bibitem{wu2019topological}
+Fengcheng Wu, Timothy Lovorn, Emanuel Tutuc, Ivar Martin, and A.~H. MacDonald.
+\newblock Topological insulators in twisted transition metal dichalcogenide homobilayers.
+\newblock {\em Physical Review Letters}, 122(8):086402, 2019.
 
-\bibitem{bardeen1957theory}
-John Bardeen, Leon~N Cooper, and John~Robert Schrieffer.
-\newblock Theory of superconductivity.
-\newblock {\em Physical review}, 108(5):1175, 1957.
+\bibitem{lee2014interfacial}
+JJ~Lee, FT~Schmitt, RG~Moore, S~Johnston, Y-T Cui, W~Li, M~Yi, ZK~Liu, M~Hashimoto, Ya~Zhang, et~al.
+\newblock Interfacial mode coupling as the origin of the enhancement of t c in fese films on srtio3.
+\newblock {\em Nature}, 515(7526):245--248, 2014.
 
-\bibitem{bardeen1957microscopic}
-John Bardeen, Leon~N Cooper, and J~Robert Schrieffer.
-\newblock Microscopic theory of superconductivity.
-\newblock {\em Physical Review}, 106(1):162, 1957.
+\bibitem{roas1988epitaxial}
+B~Roas, L~Schultz, and G~Endres.
+\newblock Epitaxial growth of yba2cu3o7- x thin films by a laser evaporation process.
+\newblock {\em Applied physics letters}, 53(16):1557--1559, 1988.
 
-\bibitem{bednorz1986possible}
-J~George Bednorz and K~Alex M{\"u}ller.
-\newblock Possible high t c superconductivity in the ba- la- cu- o system.
-\newblock {\em Zeitschrift f{\"u}r Physik B Condensed Matter}, 64(2):189--193, 1986.
-
-\bibitem{kamihara2006iron}
-Yoichi Kamihara, Hidenori Hiramatsu, Masahiro Hirano, Ryuto Kawamura, Hiroshi Yanagi, Toshio Kamiya, and Hideo Hosono.
-\newblock Iron-based layered superconductor: Laofep.
-\newblock {\em Journal of the American Chemical Society}, 128(31):10012--10013, 2006.
-
-\bibitem{li2019superconductivity}
-Danfeng Li, Kyuho Lee, Bai~Yang Wang, Motoki Osada, Samuel Crossley, Hye~Ryoung Lee, Yi~Cui, Yasuyuki Hikita, and Harold~Y Hwang.
-\newblock Superconductivity in an infinite-layer nickelate.
-\newblock {\em Nature}, 572(7771):624--627, 2019.
-
-\bibitem{liu2012electronic}
-Defa Liu, Wenhao Zhang, Daixiang Mou, Junfeng He, Yun-Bo Ou, Qing-Yan Wang, Zhi Li, Lili Wang, Lin Zhao, Shaolong He, et~al.
-\newblock Electronic origin of high-temperature superconductivity in single-layer fese superconductor.
-\newblock {\em Nature Communications}, 3(1):1--6, 2012.
-
-\bibitem{cao2018correlated}
-Yuan Cao, Valla Fatemi, Ahmet Demir, Shiang Fang, Spencer~L Tomarken, Jason~Y Luo, Javier~D Sanchez-Yamagishi, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, et~al.
-\newblock Correlated insulator behaviour at half-filling in magic-angle graphene superlattices.
-\newblock {\em Nature}, 556(7699):80--84, 2018.
-
-\bibitem{cao2018unconventional}
-Yuan Cao, Valla Fatemi, Shiang Fang, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, and Pablo Jarillo-Herrero.
-\newblock Unconventional superconductivity in magic-angle graphene superlattices.
-\newblock {\em Nature}, 556(7699):43--50, 2018.
-
-\bibitem{klitzing1980new}
-K~v Klitzing, Gerhard Dorda, and Michael Pepper.
-\newblock New method for high-accuracy determination of the fine-structure constant based on quantized hall resistance.
-\newblock {\em Physical review letters}, 45(6):494, 1980.
+\bibitem{gronke2018chemical}
+Martin Gr{\"o}nke, Peer Schmidt, Martin Valldor, Steffen Oswald, Daniel Wolf, Axel Lubk, Bernd B{\"u}chner, and Silke Hampel.
+\newblock Chemical vapor growth and delamination of $\alpha$-rucl 3 nanosheets down to the monolayer limit.
+\newblock {\em Nanoscale}, 10(40):19014--19022, 2018.
 
 \bibitem{tsui1982two}
 Daniel~C Tsui, Horst~L Stormer, and Arthur~C Gossard.
@@ -80,95 +95,200 @@ Robert Willett, James~P Eisenstein, Horst~L St{\"o}rmer, Daniel~C Tsui, Arthur~C
 \newblock Observation of an even-denominator quantum number in the fractional quantum hall effect.
 \newblock {\em Physical review letters}, 59(15):1776, 1987.
 
-\bibitem{bernevig2006quantum}
-B~Andrei Bernevig, Taylor~L Hughes, and Shou-Cheng Zhang.
-\newblock Quantum spin hall effect and topological phase transition in hgte quantum wells.
-\newblock {\em science}, 314(5806):1757--1761, 2006.
+\bibitem{gor2018colloquium}
+Lev~P Gor’kov and Vladimir~Z Kresin.
+\newblock Colloquium: High pressure and road to room temperature superconductivity.
+\newblock {\em Reviews of Modern Physics}, 90(1):011001, 2018.
 
-\bibitem{hsieh2008topological}
-David Hsieh, Dong Qian, Lewis Wray, Yiman Xia, Yew~San Hor, Robert~Joseph Cava, and M~Zahid Hasan.
-\newblock A topological dirac insulator in a quantum spin hall phase.
-\newblock {\em Nature}, 452(7190):970--974, 2008.
+\bibitem{novoselov2004electric}
+Kostya~S Novoselov, Andre~K Geim, Sergei~V Morozov, De-eng Jiang, Yanshui Zhang, Sergey~V Dubonos, Irina~V Grigorieva, and Alexandr~A Firsov.
+\newblock Electric field effect in atomically thin carbon films.
+\newblock {\em Science}, 306(5696):666--669, 2004.
 
-\bibitem{xu2014artificial}
-Jin-Peng Xu, Canhua Liu, Mei-Xiao Wang, Jianfeng Ge, Zhi-Long Liu, Xiaojun Yang, Yan Chen, Ying Liu, Zhu-An Xu, Chun-Lei Gao, et~al.
-\newblock Artificial topological superconductor by the proximity effect.
-\newblock {\em Physical Review Letters}, 112(21):217001, 2014.
+\bibitem{tsen2016nature}
+AW~Tsen, B~Hunt, YD~Kim, ZJ~Yuan, S~Jia, RJ~Cava, J~Hone, Philip Kim, CR~Dean, and AN~Pasupathy.
+\newblock Nature of the quantum metal in a two-dimensional crystalline superconductor.
+\newblock {\em Nature Physics}, 12(3):208--212, 2016.
 
-\bibitem{wen1990topological}
+\bibitem{huang2017layer}
+Bevin Huang, Genevieve Clark, Efr{\'e}n Navarro-Moratalla, Dahlia~R Klein, Ran Cheng, Kyle~L Seyler, Ding Zhong, Emma Schmidgall, Michael~A McGuire, David~H Cobden, et~al.
+\newblock Layer-dependent ferromagnetism in a van der waals crystal down to the monolayer limit.
+\newblock {\em Nature}, 546(7657):270--273, 2017.
+
+\bibitem{huang2018electrical}
+Bevin Huang, Genevieve Clark, Dahlia~R Klein, David MacNeill, Efr{\'e}n Navarro-Moratalla, Kyle~L Seyler, Nathan Wilson, Michael~A McGuire, David~H Cobden, Di~Xiao, et~al.
+\newblock Electrical control of 2d magnetism in bilayer cri 3.
+\newblock {\em Nature nanotechnology}, 13(7):544--548, 2018.
+
+\bibitem{novoselov20162d}
+K~S Novoselov, Artem Mishchenko, Alexandra Carvalho, and AH~Castro~Neto.
+\newblock 2d materials and van der waals heterostructures.
+\newblock {\em Science}, 353(6298):aac9439, 2016.
+
+\bibitem{haldane1983nonlinear}
+F~Duncan~M Haldane.
+\newblock Nonlinear field theory of large-spin heisenberg antiferromagnets: semiclassically quantized solitons of the one-dimensional easy-axis n{\'e}el state.
+\newblock {\em Physical review letters}, 50(15):1153, 1983.
+
+\bibitem{haldane1983continuum}
+F~Duncan~M Haldane.
+\newblock Continuum dynamics of the 1-d heisenberg antiferromagnet: Identification with the o (3) nonlinear sigma model.
+\newblock {\em Physics letters a}, 93(9):464--468, 1983.
+
+\bibitem{affleck2004rigorous}
+Ian Affleck, Tom Kennedy, Elliott~H Lieb, and Hal Tasaki.
+\newblock Rigorous results on valence-bond ground states in antiferromagnets.
+\newblock {\em Condensed Matter Physics and Exactly Soluble Models: Selecta of Elliott H. Lieb}, pages 249--252, 2004.
+
+\bibitem{wen2017colloquium}
 Xiao-Gang Wen.
-\newblock Topological orders in rigid states.
-\newblock {\em International Journal of Modern Physics B}, 4(02):239--271, 1990.
-
-\bibitem{levin2005string}
-Michael~A Levin and Xiao-Gang Wen.
-\newblock String-net condensation: A physical mechanism for topological phases.
-\newblock {\em Physical Review B}, 71(4):045110, 2005.
-
-\bibitem{chen2010local}
-Xie Chen, Zheng-Cheng Gu, and Xiao-Gang Wen.
-\newblock Local unitary transformation, long-range quantum entanglement, wave function renormalization, and topological order.
-\newblock {\em Physical review b}, 82(15):155138, 2010.
+\newblock Colloquium: Zoo of quantum-topological phases of matter.
+\newblock {\em Reviews of Modern Physics}, 89(4):041004, 2017.
 
 \bibitem{wen2002quantum}
 Xiao-Gang Wen.
 \newblock Quantum orders and symmetric spin liquids.
 \newblock {\em Physical Review B}, 65(16):165113, 2002.
 
-\bibitem{wen1990ground}
-Xiao-Gang Wen and Qian Niu.
-\newblock Ground-state degeneracy of the fractional quantum {Hall} states in the presence of a random potential and on high-genus riemann surfaces.
-\newblock {\em Physical Review B}, 41(13):9377, 1990.
+\bibitem{chen2011classification}
+Xie Chen, Zheng-Cheng Gu, and Xiao-Gang Wen.
+\newblock Classification of gapped symmetric phases in one-dimensional spin systems.
+\newblock {\em Physical review b}, 83(3):035107, 2011.
 
-\bibitem{chen2013symmetry}
-Xie Chen, Zheng-Cheng Gu, Zheng-Xin Liu, and Xiao-Gang Wen.
-\newblock Symmetry protected topological orders and the group cohomology of their symmetry group.
-\newblock {\em Physical Review B}, 87(15):155114, 2013.
-
-\bibitem{mesaros2013classification}
-Andrej Mesaros and Ying Ran.
-\newblock Classification of symmetry enriched topological phases with exactly solvable models.
-\newblock {\em Physical Review B}, 87(15):155115, 2013.
-
-\bibitem{laidlaw1971feynman}
-Michael~GG Laidlaw and Cecile~Morette DeWitt.
-\newblock Feynman functional integrals for systems of indistinguishable particles.
-\newblock {\em Physical Review D}, 3(6):1375, 1971.
-
-\bibitem{wu1984general}
-Yong-Shi Wu.
-\newblock General theory for quantum statistics in two dimensions.
-\newblock {\em Physical Review Letters}, 52(24):2103, 1984.
-
-\bibitem{wilczek1982quantum}
-Frank Wilczek.
-\newblock Quantum mechanics of fractional-spin particles.
-\newblock {\em Physical review letters}, 49(14):957, 1982.
-
-\bibitem{kitaev2006topological}
-Alexei Kitaev and John Preskill.
-\newblock Topological entanglement entropy.
-\newblock {\em Physical review letters}, 96(11):110404, 2006.
+\bibitem{chen2010local}
+Xie Chen, Zheng-Cheng Gu, and Xiao-Gang Wen.
+\newblock Local unitary transformation, long-range quantum entanglement, wave function renormalization, and topological order.
+\newblock {\em Physical review b}, 82(15):155138, 2010.
 
 \bibitem{levin2006detecting}
 Michael Levin and Xiao-Gang Wen.
 \newblock Detecting topological order in a ground state wave function.
 \newblock {\em Physical review letters}, 96(11):110405, 2006.
 
-\bibitem{abrahams1979scaling}
-Elihu Abrahams, PW~Anderson, DC~Licciardello, and TV~Ramakrishnan.
-\newblock Scaling theory of localization: Absence of quantum diffusion in two dimensions.
-\newblock {\em Physical Review Letters}, 42(10):673, 1979.
+\bibitem{kitaev2006topological}
+Alexei Kitaev and John Preskill.
+\newblock Topological entanglement entropy.
+\newblock {\em Physical review letters}, 96(11):110404, 2006.
 
-\bibitem{chen2011classification}
-Xie Chen, Zheng-Cheng Gu, and Xiao-Gang Wen.
-\newblock Classification of gapped symmetric phases in one-dimensional spin systems.
-\newblock {\em Physical review b}, 83(3):035107, 2011.
+\bibitem{wen1990ground}
+Xiao-Gang Wen and Qian Niu.
+\newblock Ground-state degeneracy of the fractional quantum {Hall} states in the presence of a random potential and on high-genus riemann surfaces.
+\newblock {\em Physical Review B}, 41(13):9377, 1990.
 
-\bibitem{novoselov2004electric}
-Kostya~S Novoselov, Andre~K Geim, Sergei~V Morozov, De-eng Jiang, Yanshui Zhang, Sergey~V Dubonos, Irina~V Grigorieva, and Alexandr~A Firsov.
-\newblock Electric field effect in atomically thin carbon films.
-\newblock {\em science}, 306(5696):666--669, 2004.
+\bibitem{wen1989vacuum}
+Xiao-Gang Wen.
+\newblock Vacuum degeneracy of chiral spin states in compactified space.
+\newblock {\em Physical Review B}, 40(10):7387, 1989.
+
+\bibitem{anderson1963plasmons}
+Philip~W Anderson.
+\newblock Plasmons, gauge invariance, and mass.
+\newblock {\em Physical Review}, 130(1):439, 1963.
+
+\bibitem{landau1959theory}
+LD~Landau.
+\newblock On the theory of the fermi liquid.
+\newblock {\em Sov. Phys. JETP}, 8(1):70, 1959.
+
+\bibitem{mesaros2013classification}
+Andrej Mesaros and Ying Ran.
+\newblock Classification of symmetry enriched topological phases with exactly solvable models.
+\newblock {\em Physical Review B}, 87(15):155115, 2013.
+
+\bibitem{lu2024fractional}
+Zhengguang Lu, Tonghang Han, Yuxuan Yao, Aidan~P Reddy, Jixiang Yang, Junseok Seo, Kenji Watanabe, Takashi Taniguchi, Liang Fu, and Long Ju.
+\newblock Fractional quantum anomalous hall effect in multilayer graphene.
+\newblock {\em Nature}, 626(8000):759--764, 2024.
+
+\bibitem{zeng2023thermodynamic}
+Yihang Zeng, Zhengchao Xia, Kaifei Kang, Jiacheng Zhu, Patrick Kn{\"u}ppel, Chirag Vaswani, Kenji Watanabe, Takashi Taniguchi, Kin~Fai Mak, and Jie Shan.
+\newblock Thermodynamic evidence of fractional chern insulator in moir\'e $\mathrm{MoTe}_2$.
+\newblock {\em Nature}, 622(7981):69--73, 2023.
+
+\bibitem{xu2023observation}
+Fan Xu, Zheng Sun, Tongtong Jia, Chang Liu, Cheng Xu, Chushan Li, Yu~Gu, Kenji Watanabe, Takashi Taniguchi, Bingbing Tong, et~al.
+\newblock Observation of integer and fractional quantum anomalous {Hall} effects in twisted bilayer $\mathrm{MoTe}_2$.
+\newblock {\em Physical Review X}, 13(3):031037, 2023.
+
+\bibitem{anderson1972more}
+Philip~W Anderson.
+\newblock More is different: Broken symmetry and the nature of the hierarchical structure of science.
+\newblock {\em Science}, 177(4047):393--396, 1972.
+
+\bibitem{bistritzer2011moire}
+Rafi Bistritzer and Allan~H MacDonald.
+\newblock Moir{\'e} bands in twisted double-layer graphene.
+\newblock {\em Proceedings of the National Academy of Sciences}, 108(30):12233--12237, 2011.
+
+\bibitem{cao2018correlated}
+Yuan Cao, Valla Fatemi, Ahmet Demir, Shiang Fang, Spencer~L Tomarken, Jason~Y Luo, Javier~D Sanchez-Yamagishi, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, et~al.
+\newblock Correlated insulator behaviour at half-filling in magic-angle graphene superlattices.
+\newblock {\em Nature}, 556(7699):80--84, 2018.
+
+\bibitem{volkov2023current}
+Pavel~A Volkov, Justin~H Wilson, Kevin~P Lucht, and JH~Pixley.
+\newblock Current-and field-induced topology in twisted nodal superconductors.
+\newblock {\em Physical Review Letters}, 130(18):186001, 2023.
+
+\bibitem{cao2021nematicity}
+Yuan Cao, Daniel Rodan-Legrain, Jeong~Min Park, Noah~FQ Yuan, Kenji Watanabe, Takashi Taniguchi, Rafael~M Fernandes, Liang Fu, and Pablo Jarillo-Herrero.
+\newblock Nematicity and competing orders in superconducting magic-angle graphene.
+\newblock {\em science}, 372(6539):264--271, 2021.
+
+\bibitem{cao2020strange}
+Yuan Cao, Debanjan Chowdhury, Daniel Rodan-Legrain, Oriol Rubies-Bigorda, Kenji Watanabe, Takashi Taniguchi, T~Senthil, and Pablo Jarillo-Herrero.
+\newblock Strange metal in magic-angle graphene with near planckian dissipation.
+\newblock {\em Physical review letters}, 124(7):076801, 2020.
+
+\bibitem{sharpe2019emergent}
+Aaron~L Sharpe, Eli~J Fox, Arthur~W Barnard, Joe Finney, Kenji Watanabe, Takashi Taniguchi, MA~Kastner, and David Goldhaber-Gordon.
+\newblock Emergent ferromagnetism near three-quarters filling in twisted bilayer graphene.
+\newblock {\em Science}, 365(6453):605--608, 2019.
+
+\bibitem{serlin2020intrinsic}
+M~Serlin, CL~Tschirhart, H~Polshyn, Y~Zhang, J~Zhu, K~Watanabe, T~Taniguchi, L~Balents, and AF~Young.
+\newblock Intrinsic quantized anomalous hall effect in a moir{\'e} heterostructure.
+\newblock {\em Science}, 367(6480):900--903, 2020.
+
+\bibitem{zhang2020flat}
+Zhiming Zhang, Yimeng Wang, Kenji Watanabe, Takashi Taniguchi, Keiji Ueno, Emanuel Tutuc, and Brian~J LeRoy.
+\newblock Flat bands in twisted bilayer transition metal dichalcogenides.
+\newblock {\em Nature Physics}, 16(11):1093--1096, 2020.
+
+\bibitem{wang2020correlated}
+Lei Wang, En-Min Shih, Augusto Ghiotto, Lede Xian, Daniel~A Rhodes, Cheng Tan, Martin Claassen, Dante~M Kennes, Yusong Bai, Bumho Kim, et~al.
+\newblock Correlated electronic phases in twisted bilayer transition metal dichalcogenides.
+\newblock {\em Nature materials}, 19(8):861--866, 2020.
+
+\bibitem{devakul2021magic}
+Trithep Devakul, Valentin Cr{\'e}pel, Yang Zhang, and Liang Fu.
+\newblock Magic in twisted transition metal dichalcogenide bilayers.
+\newblock {\em Nature Communications}, 12(1):1--9, 2021.
+
+\bibitem{li2021lattice}
+En~Li, Jin-Xin Hu, Xuemeng Feng, Zishu Zhou, Liheng An, Kam~Tuen Law, Ning Wang, and Nian Lin.
+\newblock Lattice reconstruction induced multiple ultra-flat bands in twisted bilayer wse2.
+\newblock {\em Nature communications}, 12(1):5601, 2021.
+
+\bibitem{neupert2011fractional}
+Titus Neupert, Luiz Santos, Claudio Chamon, and Christopher Mudry.
+\newblock Fractional quantum {Hall} states at zero magnetic field.
+\newblock {\em Physical Review Letters}, 106(23):236804, 2011.
+
+\bibitem{tang2011high}
+Evelyn Tang, Jia-Wei Mei, and Xiao-Gang Wen.
+\newblock High-temperature fractional quantum {Hall} states.
+\newblock {\em Physical Review Letters}, 106(23):236802, 2011.
+
+\bibitem{sheng2011fractional}
+DN~Sheng, Zheng-Cheng Gu, Kai Sun, and L~Sheng.
+\newblock Fractional quantum {Hall} effect in the absence of {Landau} levels.
+\newblock {\em Nature Communications}, 2(1):389, 2011.
+
+\bibitem{regnault2011fractional}
+Nicolas Regnault and B~Andrei Bernevig.
+\newblock Fractional {Chern} insulator.
+\newblock {\em Physical Review X}, 1(2):021014, 2011.
 
 \bibitem{mak2010atomically}
 Kin~Fai Mak, Changgu Lee, James Hone, Jie Shan, and Tony~F Heinz.
@@ -185,9 +305,897 @@ Li~F Mattheiss.
 \newblock Band structures of transition-metal-dichalcogenide layer compounds.
 \newblock {\em Physical Review B}, 8(8):3719, 1973.
 
-\bibitem{bistritzer2011moire}
-Rafi Bistritzer and Allan~H MacDonald.
-\newblock Moir{\'e} bands in twisted double-layer graphene.
-\newblock {\em Proceedings of the National Academy of Sciences}, 108(30):12233--12237, 2011.
+\bibitem{dresselhaus1955spin}
+Gene Dresselhaus.
+\newblock Spin-orbit coupling effects in zinc blende structures.
+\newblock {\em Physical Review}, 100(2):580, 1955.
+
+\bibitem{voon2009kp}
+Lok C Lew~Yan Voon and Morten Willatzen.
+\newblock {\em The kp method: electronic properties of semiconductors}.
+\newblock Springer Science \& Business Media, 2009.
+
+\bibitem{kormanyos2015k}
+Andor Korm{\'a}nyos, Guido Burkard, Martin Gmitra, Jaroslav Fabian, Viktor Z{\'o}lyomi, Neil~D Drummond, and Vladimir Fal’ko.
+\newblock k{\textperiodcentered} p theory for two-dimensional transition metal dichalcogenide semiconductors.
+\newblock {\em 2D Materials}, 2(2):022001, 2015.
+
+\bibitem{jung2014ab}
+Jeil Jung, Arnaud Raoux, Zhenhua Qiao, and Allan~H MacDonald.
+\newblock Ab initio theory of moir{\'e} superlattice bands in layered two-dimensional materials.
+\newblock {\em Physical Review B}, 89(20):205414, 2014.
+
+\bibitem{song2019all}
+Zhida Song, Zhijun Wang, Wujun Shi, Gang Li, Chen Fang, and B~Andrei Bernevig.
+\newblock All magic angles in twisted bilayer graphene are topological.
+\newblock {\em Physical review letters}, 123(3):036401, 2019.
+
+\bibitem{laughlin1983anomalous}
+Robert~B Laughlin.
+\newblock Anomalous quantum {Hall} effect: an incompressible quantum fluid with fractionally charged excitations.
+\newblock {\em Physical Review Letters}, 50(18):1395, 1983.
+
+\bibitem{jain1989composite}
+Jainendra~K Jain.
+\newblock Composite-fermion approach for the fractional quantum {Hall} effect.
+\newblock {\em Physical Review Letters}, 63(2):199, 1989.
+
+\bibitem{jain1989incompressible}
+Jainendra~K Jain.
+\newblock Incompressible quantum {Hall} states.
+\newblock {\em Physical Review B}, 40(11):8079, 1989.
+
+\bibitem{jain1990theory}
+Jainendra~K Jain.
+\newblock Theory of the fractional quantum {Hall} effect.
+\newblock {\em Physical Review B}, 41(11):7653, 1990.
+
+\bibitem{murthy1999hamiltonian}
+Ganpathy Murthy.
+\newblock Hamiltonian description of composite fermions: Magnetoexciton dispersions.
+\newblock {\em Physical Review B}, 60(19):13702, 1999.
+
+\bibitem{abrikosov2004nobel}
+Aleksej~A Abrikosov.
+\newblock Nobel lecture: Type-ii superconductors and the vortex lattice.
+\newblock {\em Reviews of modern physics}, 76(3):975, 2004.
+
+\bibitem{murthy2001hamiltonian}
+Ganpathy Murthy.
+\newblock Hamiltonian theory of the fractional quantum {Hall} effect: Conserving approximation for incompressible fractions.
+\newblock {\em Physical Review B}, 64(19):195310, 2001.
+
+\bibitem{murthy2003hamiltonian}
+Ganpathy Murthy and R~Shankar.
+\newblock Hamiltonian theories of the fractional quantum {Hall} effect.
+\newblock {\em Reviews of Modern Physics}, 75(4):1101, 2003.
+
+\bibitem{girvin1986magneto}
+S.~M. Girvin, A.~H. MacDonald, and P.~M. Platzman.
+\newblock Magneto-roton theory of collective excitations in the fractional quantum {Hall} effect.
+\newblock {\em Physical Review B}, 33(4):2481, 1986.
+
+\bibitem{parameswaran2012fractional}
+SA~Parameswaran, R~Roy, and Shivaji~L Sondhi.
+\newblock Fractional chern insulators and the {$W\text{-}\infty$} algebra.
+\newblock {\em Physical Review B}, 85(24):241308, 2012.
+
+\bibitem{ledwith2023vortexability}
+Patrick~J Ledwith, Ashvin Vishwanath, and Daniel~E Parker.
+\newblock Vortexability: A unifying criterion for ideal fractional {Chern} insulators.
+\newblock {\em Physical Review B}, 108(20):205144, 2023.
+
+\bibitem{simon2015fractional}
+Steven~H Simon, Fenner Harper, and N~Read.
+\newblock Fractional chern insulators in bands with zero berry curvature.
+\newblock {\em Physical Review B}, 92(19):195104, 2015.
+
+\bibitem{sun2011nearly}
+Kai Sun, Zhengcheng Gu, Hosho Katsura, and S.~D. Sarma.
+\newblock Nearly flatbands with nontrivial topology.
+\newblock {\em Physical Review Letters}, 106(23):236803, 2011.
+
+\bibitem{xiao2011interface}
+Di~Xiao, Wenguang Zhu, Ying Ran, Naoto Nagaosa, and Satoshi Okamoto.
+\newblock Interface engineering of quantum {Hall} effects in digital transition metal oxide heterostructures.
+\newblock {\em Nature Communications}, 2(1):596, 2011.
+
+\bibitem{roy2014band}
+Rahul Roy.
+\newblock Band geometry of fractional topological insulators.
+\newblock {\em Physical Review B}, 90(16):165139, 2014.
+
+\bibitem{wang2021exact}
+Jie Wang, Jennifer Cano, Andrew~J Millis, Zhao Liu, and Bo~Yang.
+\newblock Exact landau level description of geometry and interaction in a flatband.
+\newblock {\em Physical Review Letters}, 127(24):246403, 2021.
+
+\bibitem{wang2023origin}
+Jie Wang, Semyon Klevtsov, and Zhao Liu.
+\newblock Origin of model fractional {Chern} insulators in all topological ideal flatbands: Explicit color-entangled wave function and exact density algebra.
+\newblock {\em Physical Review Research}, 5(2):023167, 2023.
+
+\bibitem{estienne2023ideal}
+Beno{\^\i}t Estienne, Nicolas Regnault, and Valentin Cr{\'e}pel.
+\newblock Ideal chern bands as landau levels in curved space.
+\newblock {\em Physical Review Research}, 5(3):L032048, 2023.
+
+\bibitem{ledwith2020fractional}
+Patrick~J Ledwith, Grigory Tarnopolsky, Eslam Khalaf, and Ashvin Vishwanath.
+\newblock Fractional chern insulator states in twisted bilayer graphene: An analytical approach.
+\newblock {\em Physical Review Research}, 2(2):023237, 2020.
+
+\bibitem{dong2023many}
+Junkai Dong, Patrick~J Ledwith, Eslam Khalaf, Jong~Yeon Lee, and Ashvin Vishwanath.
+\newblock Many-body ground states from decomposition of ideal higher {Chern} bands: Applications to chirally twisted graphene multilayers.
+\newblock {\em Physical Review Research}, 5(2):023166, 2023.
+
+\bibitem{haldane1985finite}
+F.~D.~M. Haldane and E.~H. Rezayi.
+\newblock Finite-size studies of the incompressible state of the fractionally quantized {Hall} effect and its excitations.
+\newblock {\em Physical Review Letters}, 54(3):237, 1985.
+
+\bibitem{feiguin2008density}
+A.~E. Feiguin, E.~H. Rezayi, C~Nayak, and S.~D. Sarma.
+\newblock Density matrix renormalization group study of incompressible fractional quantum {Hall} states.
+\newblock {\em Physical Review Letters}, 100(16):166803, 2008.
+
+\bibitem{dong2023anomalous}
+Junkai Dong, Taige Wang, Tianle Wang, Tomohiro Soejima, Michael~P Zaletel, Ashvin Vishwanath, and Daniel~E Parker.
+\newblock Anomalous {Hall} crystals in rhombohedral multilayer graphene {I}: Interaction-driven {Chern} bands and fractional quantum {Hall} states at zero magnetic field.
+\newblock {\em arXiv preprint arXiv:2311.05568}, 2023.
+
+\bibitem{dong2023composite}
+Junkai Dong, Jie Wang, Patrick~J Ledwith, Ashvin Vishwanath, and Daniel~E Parker.
+\newblock Composite fermi liquid at zero magnetic field in twisted $\mathrm{MoTe}_2$.
+\newblock {\em arXiv preprint arXiv:2306.01719}, 2023.
+
+\bibitem{yu2023fractional}
+Jiabin Yu, Jonah Herzog-Arbeitman, Minxuan Wang, Oskar Vafek, B~Andrei Bernevig, and Nicolas Regnault.
+\newblock Fractional {Chern} insulators vs. non-magnetic states in twisted bilayer $\mathrm{MoTe}_2$.
+\newblock {\em arXiv preprint arXiv:2309.14429}, 2023.
+
+\bibitem{goldman2023zero}
+Hart Goldman, Aidan~P Reddy, Nisarga Paul, and Liang Fu.
+\newblock Zero-field composite fermi liquid in twisted semiconductor bilayers.
+\newblock {\em arXiv preprint arXiv:2306.02513}, 2023.
+
+\bibitem{dong2023theory}
+Zhihuan Dong, Adarsh~S Patri, and T~Senthil.
+\newblock Theory of fractional quantum anomalous {Hall} phases in pentalayer rhombohedral graphene moir\'e structures.
+\newblock {\em arXiv preprint arXiv:2311.03445}, 2023.
+
+\bibitem{lu2016classification}
+Yuan-Ming Lu and Ashvin Vishwanath.
+\newblock Classification and properties of symmetry-enriched topological phases: {Chern-Simons} approach with applications to z 2 spin liquids.
+\newblock {\em Physical Review B}, 93(15):155121, 2016.
+
+\bibitem{wen1992shift}
+Xiao-Gang Wen and A~Zee.
+\newblock Shift and spin vector: New topological quantum numbers for the {Hall} fluids.
+\newblock {\em Physical Review Letters}, 69(6):953, 1992.
+
+\bibitem{manjunath2023rotational}
+Naren Manjunath, Abhinav Prem, and Yuan-Ming Lu.
+\newblock Rotational symmetry protected edge and corner states in abelian topological phases.
+\newblock {\em Physical Review B}, 107(19):195130, 2023.
+
+\bibitem{han2019generalized}
+Bo~Han, Huajia Wang, and Peng Ye.
+\newblock Generalized wen-zee terms.
+\newblock {\em Physical Review B}, 99(20):205120, 2019.
+
+\bibitem{li2020fractional}
+Tianhe Li, Penghao Zhu, Wladimir~A Benalcazar, and Taylor~L Hughes.
+\newblock Fractional disclination charge in two-dimensional $c_n$-symmetric topological crystalline insulators.
+\newblock {\em Physical Review B}, 101(11):115115, 2020.
+
+\bibitem{zhang2022fractional}
+Yuxuan Zhang, Naren Manjunath, Gautam Nambiar, and Maissam Barkeshli.
+\newblock Fractional disclination charge and discrete shift in the hofstadter butterfly.
+\newblock {\em Physical Review Letters}, 129(27):275301, 2022.
+
+\bibitem{pinczuk1998light}
+A~Pinczuk, B.~S. Dennis, L.~N. Pfeiffer, and K.~W. West.
+\newblock Light scattering by collective excitations in the fractional quantum {Hall} regime.
+\newblock {\em Physica B: Condensed Matter}, 249:40--43, 1998.
+
+\bibitem{kang2000inelastic}
+Moonsoo Kang, A~Pinczuk, B.~S. Dennis, M.~A. Eriksson, L.~N. Pfeiffer, and K.~W. West.
+\newblock Inelastic light scattering by gap excitations of fractional quantum {Hall} states at $1/3\leq\nu\leq2/3$.
+\newblock {\em Physical Review Letters}, 84(3):546, 2000.
+
+\bibitem{kukushkin2009dispersion}
+Igor~V Kukushkin, Jurgen~H Smet, Vito~W Scarola, Vladimir Umansky, and Klaus von Klitzing.
+\newblock Dispersion of the excitations of fractional quantum {Hall} states.
+\newblock {\em Science}, 324(5930):1044--1047, 2009.
+
+\bibitem{haldane2011geometrical}
+F.~D.~M. Haldane.
+\newblock Geometrical description of the fractional quantum {Hall} effect.
+\newblock {\em Physical Review Letters}, 107(11):116801, 2011.
+
+\bibitem{haldane2009hall}
+F.~D.~M. Haldane.
+\newblock {Hall} viscosity and intrinsic metric of incompressible fractional {Hall} fluids.
+\newblock {\em arXiv preprint arXiv:0906.1854}, 2009.
+
+\bibitem{yang2012model}
+Bo~Yang, Zi-Xiang Hu, Z~Papi{\'c}, and F.~D.~M. Haldane.
+\newblock Model wave functions for the collective modes and the magnetoroton theory of the fractional quantum {Hall} effect.
+\newblock {\em Physical Review Letters}, 108(25):256807, 2012.
+
+\bibitem{arovas1988functional}
+Daniel~P Arovas and Assa Auerbach.
+\newblock Functional integral theories of low-dimensional quantum heisenberg models.
+\newblock {\em Physical Review B}, 38(1):316, 1988.
+
+\bibitem{read1991large}
+Nicholas Read and Subir Sachdev.
+\newblock Large-n expansion for frustrated quantum antiferromagnets.
+\newblock {\em Physical Review Letters}, 66(13):1773, 1991.
+
+\bibitem{sachdev1991large}
+Subir Sachdev and Nicholas Read.
+\newblock Large n expansion for frustrated and doped quantum antiferromagnets.
+\newblock {\em International Journal of Modern Physics B}, 5(01n02):219--249, 1991.
+
+\bibitem{sachdev1992kagome}
+Subir Sachdev.
+\newblock Kagome and triangular lattice heisenberg antiferromagnets: Ordering from quantum fluctuations and quantum-disordered ground states with unconfined bosonic spinons.
+\newblock {\em Physical Review B}, 45(21):12377, 1992.
+
+\bibitem{wang2010schwinger}
+Fa~Wang.
+\newblock Schwinger boson mean field theories of spin liquid states on a honeycomb lattice: Projective symmetry group analysis and critical field theory.
+\newblock {\em Physical Review B}, 82(2):024419, 2010.
+
+\bibitem{wen1991mean}
+Xiao-Gang Wen.
+\newblock Mean-field theory of spin-liquid states with finite energy gap and topological orders.
+\newblock {\em Physical Review B}, 44(6):2664, 1991.
+
+\bibitem{gros1989physics}
+Claudius Gros.
+\newblock Physics of projected wavefunctions.
+\newblock {\em Annals of Physics}, 189(1):53--88, 1989.
+
+\bibitem{tay2011variational}
+Tiamhock Tay and Olexei~I Motrunich.
+\newblock Variational study of $j_1$-$j_2$ heisenberg model on kagome lattice using projected schwinger-boson wave functions.
+\newblock {\em Physical Review B}, 84(2):020404, 2011.
+
+\bibitem{pasquier1998dipole}
+V.~Pasquier and F.~D.~M. Haldane.
+\newblock A dipole interpretation of the $\nu=1/2$ state.
+\newblock {\em Nuclear Physics B}, 516(3):719--726, 1998.
+
+\bibitem{read1998lowest}
+Nicholas Read.
+\newblock Lowest-{Landau}-level theory of the quantum {Hall} effect: The fermi-liquid-like state of bosons at filling factor one.
+\newblock {\em Physical Review B}, 58(24):16262, 1998.
+
+\bibitem{murthy2012hamiltonian}
+Ganpathy Murthy and R~Shankar.
+\newblock Hamiltonian theory of fractionally filled {Chern} bands.
+\newblock {\em Physical Review B}, 86(19):195146, 2012.
+
+\bibitem{wang2023fractional}
+Chong Wang, Xiao-Wei Zhang, Xiaoyu Liu, Yuchi He, Xiaodong Xu, Ying Ran, Ting Cao, and Di~Xiao.
+\newblock Fractional {Chern} insulator in twisted bilayer $\mathrm{MoTe}_2$.
+\newblock {\em arXiv preprint arXiv:2304.11864}, 2023.
+
+\bibitem{balram2013state}
+Ajit~C Balram, Arkadiusz W{\'o}js, and Jainendra~K Jain.
+\newblock State counting for excited bands of the fractional quantum hall effect: Exclusion rules for bound excitons.
+\newblock {\em Physical Review B}, 88(20):205312, 2013.
+
+\bibitem{kamilla1996composite}
+Rajiv~K Kamilla, Xiao-Guang Wu, and Jainendra~K Jain.
+\newblock Composite fermion theory of collective excitations in fractional quantum {Hall} effect.
+\newblock {\em Physical Review Letters}, 76(8):1332, 1996.
+
+\bibitem{haldane1985periodic}
+F.~D.~M. Haldane and E.~H. Rezayi.
+\newblock Periodic laughlin-jastrow wave functions for the fractional quantized {Hall} effect.
+\newblock {\em Physical Review B}, 31(4):2529, 1985.
+
+\bibitem{qi2011generic}
+Xiao-Liang Qi.
+\newblock Generic wave-function description of fractional quantum anomalous hall states and fractional topological insulators.
+\newblock {\em Physical review letters}, 107(12):126803, 2011.
+
+\bibitem{wu2013bloch}
+Yang-Le Wu, Nicolas Regnault, and B~Andrei Bernevig.
+\newblock Bloch model wave functions and pseudopotentials for all fractional chern insulators.
+\newblock {\em Physical review letters}, 110(10):106802, 2013.
+
+\bibitem{jian2013crystal}
+Chao-Ming Jian and Xiao-Liang Qi.
+\newblock Crystal-symmetry preserving wannier states for fractional {Chern} insulators.
+\newblock {\em Physical Review B}, 88(16):165134, 2013.
+
+\bibitem{fang2012bulk}
+Chen Fang, Matthew~J Gilbert, and B~Andrei Bernevig.
+\newblock Bulk topological invariants in noninteracting point group symmetric insulators.
+\newblock {\em Physical Review B}, 86(11):115112, 2012.
+
+\bibitem{chen2017symmetry}
+Xie Chen.
+\newblock Symmetry fractionalization in two dimensional topological phases.
+\newblock {\em Reviews in Physics}, 2:3--18, 2017.
+
+\bibitem{cheng2016translational}
+Meng Cheng, Michael Zaletel, Maissam Barkeshli, Ashvin Vishwanath, and Parsa Bonderson.
+\newblock Translational symmetry and microscopic constraints on symmetry-enriched topological phases: A view from the surface.
+\newblock {\em Physical Review X}, 6(4):041068, 2016.
+
+\bibitem{gelfand1994hyperdeterminants}
+Israel~M Gelfand, Mikhail~M Kapranov, Andrei~V Zelevinsky, Israel~M Gelfand, Mikhail~M Kapranov, and Andrei~V Zelevinsky.
+\newblock {\em Hyperdeterminants}.
+\newblock Springer, 1994.
+
+\bibitem{hillar2013most}
+Christopher~J Hillar and Lek-Heng Lim.
+\newblock Most tensor problems are np-hard.
+\newblock {\em Journal of the ACM (JACM)}, 60(6):1--39, 2013.
+
+\bibitem{barvinok1995new}
+Alexander~I Barvinok.
+\newblock New algorithms for linear k-matroid intersection and matroid k-parity problems.
+\newblock {\em Mathematical Programming}, 69:449--470, 1995.
+
+\bibitem{pu2017composite}
+Songyang Pu, Ying-Hai Wu, and Jainendra~K Jain.
+\newblock Composite fermions on a torus.
+\newblock {\em Physical Review B}, 96(19):195302, 2017.
+
+\bibitem{fremling2014coherent}
+Mikael Fremling.
+\newblock Coherent state wave functions on the torus.
+\newblock {\em arXiv preprint arXiv:1401.6834}, 2014.
+
+\bibitem{lu2012symmetry}
+Yuan-Ming Lu and Ying Ran.
+\newblock Symmetry-protected fractional {Chern} insulators and fractional topological insulators.
+\newblock {\em Physical Review B}, 85(16):165134, 2012.
+
+\bibitem{balram2017positions}
+Ajit~C Balram and Songyang Pu.
+\newblock Positions of the magnetoroton minima in the fractional quantum {Hall} effect.
+\newblock {\em The European Physical Journal B}, 90:1--9, 2017.
+
+\bibitem{moore1991nonabelions}
+Gregory Moore and Nicholas Read.
+\newblock Nonabelions in the fractional quantum {Hall} effect.
+\newblock {\em Nuclear Physics B}, 360(2-3):362--396, 1991.
+
+\bibitem{lee2007particle}
+Sung-Sik Lee, Shinsei Ryu, Chetan Nayak, and Matthew P.~A. Fisher.
+\newblock Particle-hole symmetry and the $\nu=5/2$ quantum {Hall} state.
+\newblock {\em Physical Review Letters}, 99(23):236807, 2007.
+
+\bibitem{levin2007particle}
+Michael Levin, Bertrand~I Halperin, and Bernd Rosenow.
+\newblock Particle-hole symmetry and the {Pfaffian} state.
+\newblock {\em Physical Review Letters}, 99(23):236806, 2007.
+
+\bibitem{son2015composite}
+Dam~Thanh Son.
+\newblock Is the composite fermion a dirac particle?
+\newblock {\em Physical Review X}, 5(3):031027, 2015.
+
+\bibitem{read2000paired}
+Nicholas Read and Dmitry Green.
+\newblock Paired states of fermions in two dimensions with breaking of parity and time-reversal symmetries and the fractional quantum {Hall} effect.
+\newblock {\em Physical Review B}, 61(15):10267, 2000.
+
+\bibitem{aboud2016hyperpfaffians}
+Ammar Aboud and Jean-Gabriel Luque.
+\newblock Hyperpfaffians.
+\newblock {\em arXiv preprint arXiv:1608.05659}, 2016.
+
+\bibitem{lopez1991fractional}
+Ana Lopez and Eduardo Fradkin.
+\newblock Fractional quantum {Hall} effect and {Chern-Simons} gauge theories.
+\newblock {\em Physical Review B}, 44(10):5246, 1991.
+
+\bibitem{zhang1992chern}
+Shou-Cheng Zhang.
+\newblock The {Chern-Simons-Landau-Ginzburg} theory of the fractional quantum {Hall} effect.
+\newblock {\em International Journal of Modern Physics B}, 6(01):25--58, 1992.
+
+\bibitem{gromov2015framing}
+Andrey Gromov, Gil~Young Cho, Yizhi You, Alexander~G Abanov, and Eduardo Fradkin.
+\newblock Framing anomaly in the effective theory of the fractional quantum {Hall} effect.
+\newblock {\em Physical Review Letters}, 114(1):016805, 2015.
+
+\bibitem{gromov2017bimetric}
+Andrey Gromov and Dam~Thanh Son.
+\newblock Bimetric theory of fractional quantum {Hall} states.
+\newblock {\em Physical Review X}, 7(4):041032, 2017.
+
+\bibitem{geracie2015spacetime}
+Michael Geracie, Dam~Thanh Son, Chaolun Wu, and Shao-Feng Wu.
+\newblock Spacetime symmetries of the quantum {Hall} effect.
+\newblock {\em Physical Review D}, 91(4):045030, 2015.
+
+\bibitem{sohal2018chern}
+Ramanjit Sohal, Luiz~H Santos, and Eduardo Fradkin.
+\newblock {Chern-Simons} composite fermion theory of fractional {Chern} insulators.
+\newblock {\em Physical Review B}, 97(12):125131, 2018.
+
+\bibitem{wen1999projective}
+Xiao-Gang Wen.
+\newblock Projective construction of non-abelian quantum {Hall} liquids.
+\newblock {\em Physical Review B}, 60(12):8827, 1999.
+
+\bibitem{barkeshli2010effective}
+Maissam Barkeshli and Xiao-Gang Wen.
+\newblock Effective field theory and projective construction for ${Z}_k$ parafermion fractional quantum {Hall} states.
+\newblock {\em Physical Review B}, 81(15):155302, 2010.
+
+\bibitem{dong2020noncommutative}
+Zhihuan Dong and T~Senthil.
+\newblock Noncommutative field theory and composite fermi liquids in some quantum {Hall} systems.
+\newblock {\em Physical Review B}, 102(20):205126, 2020.
+
+\bibitem{halperin1993theory}
+Bertrand~I Halperin, Patrick~A Lee, and Nicholas Read.
+\newblock Theory of the half-filled {Landau} level.
+\newblock {\em Physical Review B}, 47(12):7312, 1993.
+
+\bibitem{shi2023quantum}
+Junren Shi.
+\newblock Quantum mechanics of composite fermions.
+\newblock {\em arXiv preprint arXiv:2309.00299}, 2023.
+
+\bibitem{oh2021evidence}
+Myungchul Oh, Kevin~P Nuckolls, Dillon Wong, Ryan~L Lee, Xiaomeng Liu, Kenji Watanabe, Takashi Taniguchi, and Ali Yazdani.
+\newblock Evidence for unconventional superconductivity in twisted bilayer graphene.
+\newblock {\em Nature}, 600(7888):240--245, 2021.
+
+\bibitem{kim2022evidence}
+Hyunjin Kim, Youngjoon Choi, Cyprian Lewandowski, Alex Thomson, Yiran Zhang, Robert Polski, Kenji Watanabe, Takashi Taniguchi, Jason Alicea, and Stevan Nadj-Perge.
+\newblock Evidence for unconventional superconductivity in twisted trilayer graphene.
+\newblock {\em Nature}, 606(7914):494--500, 2022.
+
+\bibitem{lake2022pairing}
+Ethan Lake, Adarsh~S Patri, and T~Senthil.
+\newblock Pairing symmetry of twisted bilayer graphene: a phenomenological synthesis.
+\newblock {\em arXiv preprint arXiv:2204.12579}, 2022.
+
+\bibitem{krishana1997plateaus}
+K~Krishana, NP~Ong, Q~Li, GD~Gu, and N~Koshizuka.
+\newblock Plateaus observed in the field profile of thermal conductivity in the superconductor {Bi$_2$Sr$_2$CaCu$_2$O$_8$}.
+\newblock {\em Science}, 277(5322):83--85, 1997.
+
+\bibitem{chiao2000low}
+May Chiao, RW~Hill, Christian Lupien, Louis Taillefer, P~Lambert, R~Gagnon, and P~Fournier.
+\newblock Low-energy quasiparticles in cuprate superconductors: A quantitative analysis.
+\newblock {\em Physical Review B}, 62(5):3554, 2000.
+
+\bibitem{sutherland2003thermal}
+Mike Sutherland, DG~Hawthorn, RW~Hill, F~Ronning, S~Wakimoto, H~Zhang, Cyril Proust, Etienne Boaknin, C~Lupien, Louis Taillefer, et~al.
+\newblock Thermal conductivity across the phase diagram of cuprates: Low-energy quasiparticles and doping dependence of the superconducting gap.
+\newblock {\em Physical Review B}, 67(17):174520, 2003.
+
+\bibitem{durst2003weak}
+Adam~C Durst, Ashvin Vishwanath, and Patrick~A Lee.
+\newblock Weak-field thermal {Hall} conductivity in the mixed state of d-wave superconductors.
+\newblock {\em Physical Review Letters}, 90(18):187002, 2003.
+
+\bibitem{zhang2001giant}
+Y~Zhang, NP~Ong, PW~Anderson, DA~Bonn, R~Liang, and WN~Hardy.
+\newblock Giant enhancement of the thermal {Hall} conductivity $\kappa_{xy}$ in the superconductor {YBa$_2$Cu$_3$O$_7$}.
+\newblock {\em Physical Review Letters}, 86(5):890, 2001.
+
+\bibitem{cvetkovic2015berry}
+Vladimir Cvetkovic and Oskar Vafek.
+\newblock Berry phases and the intrinsic thermal {Hall} effect in high-temperature cuprate superconductors.
+\newblock {\em Nature Communications}, 6(1):1--7, 2015.
+
+\bibitem{banerjee2018observation}
+Mitali Banerjee, Moty Heiblum, Vladimir Umansky, Dima~E Feldman, Yuval Oreg, and Ady Stern.
+\newblock Observation of half-integer thermal hall conductance.
+\newblock {\em Nature}, 559(7713):205--210, 2018.
+
+\bibitem{yokoi2021half}
+T~Yokoi, S~Ma, Y~Kasahara, S~Kasahara, T~Shibauchi, N~Kurita, H~Tanaka, J~Nasu, Y~Motome, C~Hickey, et~al.
+\newblock Half-integer quantized anomalous thermal hall effect in the kitaev material candidate $\alpha$-rucl3.
+\newblock {\em Science}, 373(6554):568--572, 2021.
+
+\bibitem{shen1993anomalously}
+Z-X Shen, DS~Dessau, BO~Wells, DM~King, WE~Spicer, AJ~Arko, D~Marshall, LW~Lombardo, A~Kapitulnik, Pa~Dickinson, et~al.
+\newblock Anomalously large gap anisotropy in the a-b plane of {Bi$_2$Sr$_2$CaCu$_2$O$_{8+\delta}$}.
+\newblock {\em Physical Review Letters}, 70(10):1553, 1993.
+
+\bibitem{ding1996angle}
+H~Ding, MR~Norman, JC~Campuzano, M~Randeria, AF~Bellman, T~Yokoya, T~Takahashi, T~Mochiku, and K~Kadowaki.
+\newblock Angle-resolved photoemission spectroscopy study of the superconducting gap anisotropy in {Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$}.
+\newblock {\em Physical Review B}, 54(14):R9678, 1996.
+
+\bibitem{zhang2016superconducting}
+Y~Zhang, JJ~Lee, RG~Moore, W~Li, M~Yi, M~Hashimoto, DH~Lu, TP~Devereaux, D-H Lee, and Z-X Shen.
+\newblock Superconducting gap anisotropy in monolayer fese thin film.
+\newblock {\em Physical Review Letters}, 117(11):117001, 2016.
+
+\bibitem{hanaguri2007quasiparticle}
+T~Hanaguri, Y~Kohsaka, JC~Davis, C~Lupien, I~Yamada, M~Azuma, M~Takano, K~Ohishi, M~Ono, and H~Takagi.
+\newblock Quasiparticle interference and superconducting gap in {Ca$_{2-x}$Na$_x$CuO$_2$Cl$_2$}.
+\newblock {\em Nature Physics}, 3(12):865--871, 2007.
+
+\bibitem{sprau2017discovery}
+Peter~O Sprau, Andrey Kostin, Andreas Kreisel, Anna~E B{\"o}hmer, Valentin Taufour, Paul~C Canfield, Shantanu Mukherjee, Peter~J Hirschfeld, Brian~M{\o}ller Andersen, and JC~S{\'e}amus Davis.
+\newblock Discovery of orbital-selective cooper pairing in fese.
+\newblock {\em Science}, 357(6346):75--80, 2017.
+
+\bibitem{sodemann2015quantum}
+Inti Sodemann and Liang Fu.
+\newblock Quantum nonlinear {Hall} effect induced by berry curvature dipole in time-reversal invariant materials.
+\newblock {\em Physical Review Letters}, 115(21):216806, 2015.
+
+\bibitem{ma2019observation}
+Qiong Ma, Su-Yang Xu, Huitao Shen, David MacNeill, Valla Fatemi, Tay-Rong Chang, Andr{\'e}s~M Mier~Valdivia, Sanfeng Wu, Zongzheng Du, Chuang-Han Hsu, et~al.
+\newblock Observation of the nonlinear hall effect under time-reversal-symmetric conditions.
+\newblock {\em Nature}, 565(7739):337--342, 2019.
+
+\bibitem{SM}
+See {Supplemental Material} for detailed derivations on both intraband and interband contribution of SATHE. Discussion on the nodal origin of the interband contribution and the Fermi surface reconstruction of twisted-bilayer FeSe are also covered.
+
+\bibitem{crowley2022supercurrent}
+Philip~JD Crowley and Liang Fu.
+\newblock Supercurrent-induced resonant optical response.
+\newblock {\em Physical Review B}, 106(21):214526, 2022.
+
+\bibitem{qin2011energy}
+Tao Qin, Qian Niu, and Junren Shi.
+\newblock Energy magnetization and the thermal {Hall} effect.
+\newblock {\em Physical Review Letters}, 107(23):236601, 2011.
+
+\bibitem{sumiyoshi2013quantum}
+Hiroaki Sumiyoshi and Satoshi Fujimoto.
+\newblock Quantum thermal {Hall} effect in a time-reversal-symmetry-broken topological superconductor in two dimensions: approach from bulk calculations.
+\newblock {\em Journal of the Physical Society of Japan}, 82(2):023602, 2013.
+
+\bibitem{dolgov2009interband}
+Oleg~V Dolgov, Igor~I Mazin, David Parker, and Alexander~A Golubov.
+\newblock Interband superconductivity: contrasts between {Bardeen-Cooper-Schrieffer} and {Eliashberg theories}.
+\newblock {\em Physical Review B}, 79(6):060502, 2009.
+
+\bibitem{song2022doping}
+Xue-Yang Song, Ya-Hui Zhang, and Ashvin Vishwanath.
+\newblock Doping a moir{\'e} mott insulator: A $t$-${J}$ model study of twisted cuprates.
+\newblock {\em Physical Review B}, 105(20):L201102, 2022.
+
+\bibitem{hu2022engineering}
+Xiaodong Hu and Ying Ran.
+\newblock Engineering chiral topological superconductivity in twisted ising superconductors.
+\newblock {\em Physical Review B}, 106(12):125136, 2022.
+
+\bibitem{brouet2012impact}
+V~Brouet, M~Fuglsang Jensen, Ping-Hui Lin, A~Taleb-Ibrahimi, P~Le~F{\`e}vre, F~Bertran, Chia-Hui Lin, Wei Ku, A~Forget, and D~Colson.
+\newblock Impact of the two fe unit cell on the electronic structure measured by arpes in iron pnictides.
+\newblock {\em Physical Review B}, 86(7):075123, 2012.
+
+\bibitem{borisenko2016direct}
+SV~Borisenko, DV~Evtushinsky, Z-H Liu, I~Morozov, R~Kappenberger, S~Wurmehl, B~B{\"u}chner, AN~Yaresko, TK~Kim, M~Hoesch, et~al.
+\newblock Direct observation of spin-orbit coupling in iron-based superconductors.
+\newblock {\em Nature Physics}, 12(4):311--317, 2016.
+
+\bibitem{yi2015observation}
+Ming Yi, ZK~Liu, Yan Zhang, Rong Yu, J-X Zhu, JJ~Lee, RG~Moore, FT~Schmitt, Wei Li, SC~Riggs, et~al.
+\newblock Observation of universal strong orbital-dependent correlation effects in iron chalcogenides.
+\newblock {\em Nature Communications}, 6(1):1--7, 2015.
+
+\bibitem{agterberg2017resilient}
+DF~Agterberg, Tatsuya Shishidou, Joseph O’Halloran, PMR Brydon, and Michael Weinert.
+\newblock Resilient nodeless d-wave superconductivity in monolayer fese.
+\newblock {\em Physical Review Letters}, 119(26):267001, 2017.
+
+\bibitem{ran2009nodal}
+Ying Ran, Fa~Wang, Hui Zhai, Ashvin Vishwanath, and Dung-Hai Lee.
+\newblock Nodal spin density wave and band topology of the feas-based materials.
+\newblock {\em Physical Review B}, 79(1):014505, 2009.
+
+\bibitem{kanigel2007protected}
+Amit Kanigel, U~Chatterjee, M~Randeria, MR~Norman, S~Souma, M~Shi, ZZ~Li, H~Raffy, and JC~Campuzano.
+\newblock Protected nodes and the collapse of fermi arcs in high-${T_c}$ cuprate superconductors.
+\newblock {\em Physical Review Letters}, 99(15):157001, 2007.
+
+\bibitem{kondo2015point}
+Takeshi Kondo, W~Malaeb, Y~Ishida, T~Sasagawa, H~Sakamoto, Tsunehiro Takeuchi, T~Tohyama, and S~Shin.
+\newblock Point nodes persisting far beyond ${T_c}$ in {Bi2212}.
+\newblock {\em Nature Communications}, 6(1):1--8, 2015.
+
+\bibitem{kendziora1996superconducting}
+C~Kendziora, RJ~Kelley, and M~Onellion.
+\newblock Superconducting gap anisotropy vs doping level in high-{$T_c$} cuprates.
+\newblock {\em Physical Review Letters}, 77(4):727, 1996.
+
+\bibitem{anzai2013relation}
+H~Anzai, A~Ino, M~Arita, H~Namatame, M~Taniguchi, M~Ishikado, K~Fujita, S~Ishida, and S~Uchida.
+\newblock Relation between the nodal and antinodal gap and critical temperature in superconducting {Bi2212}.
+\newblock {\em Nature Communications}, 4(1):1--7, 2013.
+
+\bibitem{eschrig2003effect}
+M~Eschrig and MR~Norman.
+\newblock Effect of the magnetic resonance on the electronic spectra of high-${T_c}$ superconductors.
+\newblock {\em Physical Review B}, 67(14):144503, 2003.
+
+\bibitem{markiewicz2005one}
+RS~Markiewicz, S~Sahrakorpi, M~Lindroos, Hsin Lin, and A~Bansil.
+\newblock One-band tight-binding model parametrization of the high-${T_c}$ cuprates including the effect of $k_z$ dispersion.
+\newblock {\em Physical Review B}, 72(5):054519, 2005.
+
+\bibitem{lian2018unveiling}
+Chao-Sheng Lian, Chen Si, and Wenhui Duan.
+\newblock Unveiling charge-density wave, superconductivity, and their competitive nature in two-dimensional nbse2.
+\newblock {\em Nano letters}, 18(5):2924--2929, 2018.
+
+\bibitem{he2020valley}
+Minhao He, Pasqual Rivera, Dinh Van~Tuan, Nathan~P Wilson, Min Yang, Takashi Taniguchi, Kenji Watanabe, Jiaqiang Yan, David~G Mandrus, Hongyi Yu, et~al.
+\newblock Valley phonons and exciton complexes in a monolayer semiconductor.
+\newblock {\em Nature communications}, 11(1):1--7, 2020.
+
+\bibitem{jones2013optical}
+Aaron~M Jones, Hongyi Yu, Nirmal~J Ghimire, Sanfeng Wu, Grant Aivazian, Jason~S Ross, Bo~Zhao, Jiaqiang Yan, David~G Mandrus, Di~Xiao, et~al.
+\newblock Optical generation of excitonic valley coherence in monolayer wse 2.
+\newblock {\em Nature nanotechnology}, 8(9):634--638, 2013.
+
+\bibitem{rivera2016valley}
+Pasqual Rivera, Kyle~L Seyler, Hongyi Yu, John~R Schaibley, Jiaqiang Yan, David~G Mandrus, Wang Yao, and Xiaodong Xu.
+\newblock Valley-polarized exciton dynamics in a 2d semiconductor heterostructure.
+\newblock {\em Science}, 351(6274):688--691, 2016.
+
+\bibitem{li2021optical}
+Weijie Li, Xin Lu, Jiatian Wu, and Ajit Srivastava.
+\newblock Optical control of the valley zeeman effect through many-exciton interactions.
+\newblock {\em Nature Nanotechnology}, 16(2):148--152, 2021.
+
+\bibitem{costanzo2016gate}
+Davide Costanzo, Sanghyun Jo, Helmuth Berger, and Alberto~F Morpurgo.
+\newblock Gate-induced superconductivity in atomically thin mos 2 crystals.
+\newblock {\em Nature nanotechnology}, 11(4):339--344, 2016.
+
+\bibitem{yan2019thickness}
+Rusen Yan, Guru Khalsa, Brian~T Schaefer, Alexander Jarjour, Sergei Rouvimov, Katja~C Nowack, Huili~G Xing, and Debdeep Jena.
+\newblock Thickness dependence of superconductivity in ultrathin nbs2.
+\newblock {\em Applied Physics Express}, 12(2):023008, 2019.
+
+\bibitem{Cho2021}
+Chang-woo Cho, Jian Lyu, Cheuk~Yin Ng, James~Jun He, Kwan~To Lo, Dmitriy Chareev, Tarob~A. Abdel-Baset, Mahmoud Abdel-Hafiez, and Rolf Lortz.
+\newblock Evidence for the fulde{\^a}{\texteuro}``ferrell{\^a}{\texteuro}``larkin{\^a}{\texteuro}``ovchinnikov state in bulk nbs2.
+\newblock {\em Nature Communications}, 12(1):3676, Jun 2021.
+
+\bibitem{de2018tuning}
+Sergio~C. de~la Barrera, Michael~R. Sinko, Devashish~P. Gopalan, Nikhil Sivadas, Kyle~L. Seyler, Kenji Watanabe, Takashi Taniguchi, Adam~W. Tsen, Xiaodong Xu, Di~Xiao, and Benjamin~M. Hunt.
+\newblock Tuning ising superconductivity with layer and spin{\^a}{\texteuro}``orbit coupling in two-dimensional transition-metal dichalcogenides.
+\newblock {\em Nature Communications}, 9(1):1427, Apr 2018.
+
+\bibitem{li2017superconducting}
+Lijun Li, Xiaoyu Deng, Zhen Wang, Yu~Liu, Milinda Abeykoon, Eric Dooryhee, Aleksandra Tomic, Yanan Huang, John~B. Warren, Emil~S. Bozin, Simon J.~L. Billinge, Yuping Sun, Yimei Zhu, Gabriel Kotliar, and Cedomir Petrovic.
+\newblock Superconducting order from disorder in 2h-tase2{\^a}ˆ'xsx.
+\newblock {\em npj Quantum Materials}, 2(1):11, Feb 2017.
+
+\bibitem{lian2019coexistence}
+Chao-Sheng Lian, Christoph Heil, Xiaoyu Liu, Chen Si, Feliciano Giustino, and Wenhui Duan.
+\newblock Coexistence of superconductivity with enhanced charge density wave order in the two-dimensional limit of tase2.
+\newblock {\em The Journal of Physical Chemistry Letters}, 10(14):4076--4081, 2019.
+
+\bibitem{cai2019atomically}
+Xinghan Cai, Tiancheng Song, Nathan~P Wilson, Genevieve Clark, Minhao He, Xiaoou Zhang, Takashi Taniguchi, Kenji Watanabe, Wang Yao, Di~Xiao, et~al.
+\newblock Atomically thin crcl3: an in-plane layered antiferromagnetic insulator.
+\newblock {\em Nano letters}, 19(6):3993--3998, 2019.
+
+\bibitem{aivazian2015magnetic}
+Grant Aivazian, Zhirui Gong, Aaron~M Jones, Rui-Lin Chu, Jiaqiang Yan, David~G Mandrus, Chuanwei Zhang, David Cobden, Wang Yao, and Xiaodong Xu.
+\newblock Magnetic control of valley pseudospin in monolayer wse2.
+\newblock {\em Nature Physics}, 11(2):148--152, 2015.
+
+\bibitem{mcguire2017magnetic}
+Michael~A McGuire, Genevieve Clark, KC~Santosh, W~Michael Chance, Gerald~E Jellison~Jr, Valentino~R Cooper, Xiaodong Xu, and Brian~C Sales.
+\newblock Magnetic behavior and spin-lattice coupling in cleavable van der waals layered crcl 3 crystals.
+\newblock {\em Physical Review Materials}, 1(1):014001, 2017.
+
+\bibitem{ai2021van}
+Linfeng Ai, Enze Zhang, Jinshan Yang, Xiaoyi Xie, Yunkun Yang, Zehao Jia, Yuda Zhang, Shanshan Liu, Zihan Li, Pengliang Leng, et~al.
+\newblock Van der waals ferromagnetic josephson junctions.
+\newblock {\em Nature communications}, 12(1):1--9, 2021.
+
+\bibitem{idzuchi2020van}
+H~Idzuchi, F~Pientka, K-F Huang, K~Harada, {\"O}~G{\"u}l, YJ~Shin, LT~Nguyen, NH~Jo, D~Shindo, RJ~Cava, et~al.
+\newblock Van der waals heterostructure magnetic josephson junction.
+\newblock {\em arXiv preprint arXiv:2012.14969}, 2020.
+
+\bibitem{li2021imaging}
+Hongyuan Li, Shaowei Li, Mit~H Naik, Jingxu Xie, Xinyu Li, Jiayin Wang, Emma Regan, Danqing Wang, Wenyu Zhao, Sihan Zhao, et~al.
+\newblock Imaging moir{\'e} flat bands in three-dimensional reconstructed wse2/ws2 superlattices.
+\newblock {\em Nature materials}, 20(7):945--950, 2021.
+
+\bibitem{angeli2021gamma}
+Mattia Angeli and Allan~H MacDonald.
+\newblock {$\Gamma$ valley transition metal dichalcogenide moir{\'e} bands}.
+\newblock {\em Proceedings of the National Academy of Sciences}, 118(10):e2021826118, 2021.
+
+\bibitem{song2021doping}
+Xue-Yang Song, Ya-Hui Zhang, and Ashvin Vishwanath.
+\newblock Doping a moir$\backslash$'e mott insulator: A tj model study of twisted cuprates.
+\newblock {\em arXiv preprint arXiv:2109.08142}, 2021.
+
+\bibitem{zhao2021emergent}
+SY~Zhao, Nicola Poccia, Xiaomeng Cui, Pavel~A Volkov, Hyobin Yoo, Rebecca Engelke, Yuval Ronen, Ruidan Zhong, Genda Gu, Stephan Plugge, et~al.
+\newblock Emergent interfacial superconductivity between twisted cuprate superconductors.
+\newblock {\em arXiv preprint arXiv:2108.13455}, 2021.
+
+\bibitem{volkov2020magic}
+Pavel~A Volkov, Justin~H Wilson, and JH~Pixley.
+\newblock Magic angles and current-induced topology in twisted nodal superconductors.
+\newblock {\em arXiv preprint arXiv:2012.07860}, 2020.
+
+\bibitem{volkov2021josephson}
+Pavel~A Volkov, Shu Yang~Frank Zhao, Nicola Poccia, Xiaomeng Cui, Philip Kim, and JH~Pixley.
+\newblock Josephson effects in twisted nodal superconductors.
+\newblock {\em arXiv preprint arXiv:2108.13456}, 2021.
+
+\bibitem{shaffer2020crystalline}
+Daniel Shaffer, Jian Kang, FJ~Burnell, and Rafael~M Fernandes.
+\newblock Crystalline nodal topological superconductivity and bogolyubov fermi surfaces in monolayer nbse 2.
+\newblock {\em Physical Review B}, 101(22):224503, 2020.
+
+\bibitem{he2018magnetic}
+Wen-Yu He, Benjamin~T Zhou, James~J He, Noah~FQ Yuan, Ting Zhang, and Kam~Tuen Law.
+\newblock Magnetic field driven nodal topological superconductivity in monolayer transition metal dichalcogenides.
+\newblock {\em Communications Physics}, 1(1):1--7, 2018.
+
+\bibitem{xi2016ising}
+Xiaoxiang Xi, Zefang Wang, Weiwei Zhao, Ju-Hyun Park, Kam~Tuen Law, Helmuth Berger, L{\'a}szl{\'o} Forr{\'o}, Jie Shan, and Kin~Fai Mak.
+\newblock Ising pairing in superconducting $\mathrm{NbSe_2}$ atomic layers.
+\newblock {\em Nature Physics}, 12(2):139--143, 2016.
+
+\bibitem{xing2017ising}
+Ying Xing, Kun Zhao, Pujia Shan, Feipeng Zheng, Yangwei Zhang, Hailong Fu, Yi~Liu, Mingliang Tian, Chuanying Xi, Haiwen Liu, et~al.
+\newblock Ising superconductivity and quantum phase transition in macro-size monolayer nbse2.
+\newblock {\em Nano letters}, 17(11):6802--6807, 2017.
+
+\bibitem{navarro2016enhanced}
+Efr{\'e}n Navarro-Moratalla, Joshua~O Island, Samuel Manas-Valero, Elena Pinilla-Cienfuegos, Andres Castellanos-Gomez, Jorge Quereda, Gabino Rubio-Bollinger, Luca Chirolli, Jose~Angel Silva-Guill{\'e}n, Nicol{\'a}s Agra{\"\i}t, et~al.
+\newblock Enhanced superconductivity in atomically thin $\mathrm{TaS_2}$.
+\newblock {\em Nature Communications}, 7(1):1--7, 2016.
+
+\bibitem{xian2019multiflat}
+Lede Xian, Dante~M Kennes, Nicolas Tancogne-Dejean, Massimo Altarelli, and Angel Rubio.
+\newblock Multiflat bands and strong correlations in twisted bilayer boron nitride: Doping-induced correlated insulator and superconductor.
+\newblock {\em Nano letters}, 19(8):4934--4940, 2019.
+
+\bibitem{lu2020meron}
+Xiaobo Lu, Ruixiang Fei, Linghan Zhu, and Li~Yang.
+\newblock Meron-like topological spin defects in monolayer crcl3.
+\newblock {\em Nature communications}, 11(1):1--8, 2020.
+
+\bibitem{zhang2020electronic}
+Fang Zhang, Hui Zhang, Wenbo Mi, and Xiaocha Wang.
+\newblock Electronic structure, magnetic anisotropy and dzyaloshinskii--moriya interaction in janus cr 2 i 3 x 3 (x= br, cl) bilayers.
+\newblock {\em Physical Chemistry Chemical Physics}, 22(16):8647--8657, 2020.
+
+\bibitem{fuh2016newtype}
+Huei-Ru Fuh, Ching-Ray Chang, Yin-Kuo Wang, Richard~FL Evans, Roy~W Chantrell, and Horng-Tay Jeng.
+\newblock Newtype single-layer magnetic semiconductor in transition-metal dichalcogenides vx2 (x= s, se and te).
+\newblock {\em Scientific reports}, 6(1):1--11, 2016.
+
+\bibitem{zhang2019magnetic}
+Wen Zhang, Lei Zhang, Ping Kwan~Johnny Wong, Jiaren Yuan, Giovanni Vinai, Piero Torelli, Gerrit van~der Laan, Yuan~Ping Feng, and Andrew~TS Wee.
+\newblock Magnetic transition in monolayer vse2 via interface hybridization.
+\newblock {\em ACS nano}, 13(8):8997--9004, 2019.
+
+\bibitem{kezilebieke2020electronic}
+Shawulienu Kezilebieke, Md~Nurul Huda, Paul Dreher, Ilkka Manninen, Yifan Zhou, Jani Sainio, Rhodri Mansell, Miguel~M Ugeda, Sebastiaan van Dijken, Hannu-Pekka Komsa, et~al.
+\newblock Electronic and magnetic characterization of epitaxial vse2 monolayers on superconducting nbse2.
+\newblock {\em Communications Physics}, 3(1):1--8, 2020.
+
+\bibitem{aikebaier2022controlling}
+Faluke Aikebaier, Tero~T Heikkil{\"a}, and JL~Lado.
+\newblock Controlling magnetism through ising superconductivity in magnetic van der waals heterostructures.
+\newblock {\em Physical Review B}, 105(5):054506, 2022.
+
+\bibitem{zhong2017van}
+Ding Zhong, Kyle~L Seyler, Xiayu Linpeng, Ran Cheng, Nikhil Sivadas, Bevin Huang, Emma Schmidgall, Takashi Taniguchi, Kenji Watanabe, Michael~A McGuire, et~al.
+\newblock Van der waals engineering of ferromagnetic semiconductor heterostructures for spin and valleytronics.
+\newblock {\em Science advances}, 3(5):e1603113, 2017.
+
+\bibitem{zhong2020layer}
+Ding Zhong, Kyle~L Seyler, Xiayu Linpeng, Nathan~P Wilson, Takashi Taniguchi, Kenji Watanabe, Michael~A McGuire, Kai-Mei~C Fu, Di~Xiao, Wang Yao, et~al.
+\newblock Layer-resolved magnetic proximity effect in van der waals heterostructures.
+\newblock {\em Nature Nanotechnology}, 15(3):187--191, 2020.
+
+\bibitem{seyler2018valley}
+Kyle~L Seyler, Ding Zhong, Bevin Huang, Xiayu Linpeng, Nathan~P Wilson, Takashi Taniguchi, Kenji Watanabe, Wang Yao, Di~Xiao, Michael~A McGuire, et~al.
+\newblock Valley manipulation by optically tuning the magnetic proximity effect in wse2/cri3 heterostructures.
+\newblock {\em Nano letters}, 18(6):3823--3828, 2018.
+
+\bibitem{zollner2019proximity}
+Klaus Zollner, Paulo E~Faria Junior, and Jaroslav Fabian.
+\newblock Proximity exchange effects in mose 2 and wse 2 heterostructures with cri 3: Twist angle, layer, and gate dependence.
+\newblock {\em Physical Review B}, 100(8):085128, 2019.
+
+\bibitem{ciorciaro2020observation}
+Livio Ciorciaro, Martin Kroner, Kenji Watanabe, Takashi Taniguchi, and Atac Imamoglu.
+\newblock Observation of magnetic proximity effect using resonant optical spectroscopy of an electrically tunable mose 2/crbr 3 heterostructure.
+\newblock {\em Physical Review Letters}, 124(19):197401, 2020.
+
+\bibitem{pan2017enhanced}
+Jie Pan, Chenguang Guo, Changsheng Song, Xiaofang Lai, Hui Li, Wei Zhao, Hui Zhang, Gang Mu, Kejun Bu, Tianquan Lin, et~al.
+\newblock Enhanced superconductivity in restacked tas2 nanosheets.
+\newblock {\em Journal of the American Chemical Society}, 139(13):4623--4626, 2017.
+
+\bibitem{ugeda2016characterization}
+Miguel~M Ugeda, Aaron~J Bradley, Yi~Zhang, Seita Onishi, Yi~Chen, Wei Ruan, Claudia Ojeda-Aristizabal, Hyejin Ryu, Mark~T Edmonds, Hsin-Zon Tsai, et~al.
+\newblock Characterization of collective ground states in single-layer nbse2.
+\newblock {\em Nature Physics}, 12(1):92--97, 2016.
+
+\bibitem{xi2015strongly}
+Xiaoxiang Xi, Liang Zhao, Zefang Wang, Helmuth Berger, L{\'a}szl{\'o} Forr{\'o}, Jie Shan, and Kin~Fai Mak.
+\newblock Strongly enhanced charge-density-wave order in monolayer nbse 2.
+\newblock {\em Nature nanotechnology}, 10(9):765--769, 2015.
+
+\bibitem{nakata2018anisotropic}
+Yuki Nakata, Katsuaki Sugawara, Satoru Ichinokura, Yoshinori Okada, Taro Hitosugi, Takashi Koretsune, Keiji Ueno, Shuji Hasegawa, Takashi Takahashi, and Takafumi Sato.
+\newblock Anisotropic band splitting in monolayer nbse2: implications for superconductivity and charge density wave.
+\newblock {\em npj 2D Materials and Applications}, 2(1):1--6, 2018.
+
+\bibitem{yang2018enhanced}
+Yafang Yang, Shiang Fang, Valla Fatemi, Jonathan Ruhman, Efr{\'e}n Navarro-Moratalla, Kenji Watanabe, Takashi Taniguchi, Efthimios Kaxiras, and Pablo Jarillo-Herrero.
+\newblock Enhanced superconductivity upon weakening of charge density wave transport in 2 h-tas 2 in the two-dimensional limit.
+\newblock {\em Physical Review B}, 98(3):035203, 2018.
+
+\bibitem{giannozzi2009quantum}
+Paolo Giannozzi, Stefano Baroni, Nicola Bonini, Matteo Calandra, Roberto Car, Carlo Cavazzoni, Davide Ceresoli, Guido~L Chiarotti, Matteo Cococcioni, Ismaila Dabo, et~al.
+\newblock Quantum espresso: a modular and open-source software project for quantum simulations of materials.
+\newblock {\em Journal of physics: Condensed matter}, 21(39):395502, 2009.
+
+\bibitem{giannozzi2017advanced}
+Paolo Giannozzi, Oliviero Andreussi, Thomas Brumme, Oana Bunau, M~Buongiorno Nardelli, Matteo Calandra, Roberto Car, Carlo Cavazzoni, Davide Ceresoli, Matteo Cococcioni, et~al.
+\newblock Advanced capabilities for materials modelling with quantum espresso.
+\newblock {\em Journal of physics: Condensed matter}, 29(46):465901, 2017.
+
+\bibitem{pizzi2020wannier90}
+Giovanni Pizzi, Valerio Vitale, Ryotaro Arita, Stefan Bl{\"u}gel, Frank Freimuth, Guillaume G{\'e}ranton, Marco Gibertini, Dominik Gresch, Charles Johnson, Takashi Koretsune, et~al.
+\newblock Wannier90 as a community code: new features and applications.
+\newblock {\em Journal of Physics: Condensed Matter}, 32(16):165902, 2020.
+
+\bibitem{tkatchenko2009accurate}
+Alexandre Tkatchenko and Matthias Scheffler.
+\newblock Accurate molecular van der waals interactions from ground-state electron density and free-atom reference data.
+\newblock {\em Physical review letters}, 102(7):073005, 2009.
+
+\bibitem{berland2019van}
+Kristian Berland, Debajit Chakraborty, and T~Thonhauser.
+\newblock van der waals density functional with corrected c 6 coefficients.
+\newblock {\em Physical Review B}, 99(19):195418, 2019.
+
+\bibitem{lee2010higher}
+Kyuho Lee, {\'E}amonn~D Murray, Lingzhu Kong, Bengt~I Lundqvist, and David~C Langreth.
+\newblock Higher-accuracy van der waals density functional.
+\newblock {\em Physical Review B}, 82(8):081101, 2010.
+
+\bibitem{cooper2010van}
+Valentino~R Cooper.
+\newblock Van der waals density functional: An appropriate exchange functional.
+\newblock {\em Physical Review B}, 81(16):161104, 2010.
+
+\bibitem{bernevig2013topological}
+B~Andrei Bernevig.
+\newblock {\em Topological insulators and topological superconductors}.
+\newblock Princeton university press, 2013.
+
+\bibitem{catarina2019twisted}
+Gon{\c{c}}alo Catarina, Bruno Amorim, Eduardo~V Castro, Jo{\~a}o~MVP Lopes, and Nuno~MR Peres.
+\newblock Twisted bilayer graphene: low-energy physics, electronic and optical properties.
+\newblock {\em Handbook of Graphene}, 3:177--232, 2019.
+
+\bibitem{ledwith2021lecture}
+Patrick Ledwith, Eslam Khalaf, and Ashvin Vishwanath.
+\newblock Lecture notes on magic angle tbg.
+\newblock 2021.
 
 \end{thebibliography}

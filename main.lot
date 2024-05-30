@@ -1,1 +1,9 @@
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Counting of the electronic guiding-center degrees of freedom $\mathcal R_e$, vortice's guiding-center degrees of freedom $\mathcal R_v$, and composite-fermion's both guiding-center $\mathcal R$ and cyclotron $\eta $ degrees of freedom on a finite-size sample for Jain's sequences $\nu =\frac {p}{2sp+1}$.}}{37}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Rotation eigenvalues for high-symmetry points of TDHF bands. For MLL model, unlike $\Gamma $ or $\mathrm {M}$ points, the rotation eigenvalue for X and Y points are defined for $C_2$ rotation instead of $C_4$. For $\mathrm {tMoTe_2}$ model, all high symmetry points are defined for $C_3$ rotation, and the magnetorotons at $\mathrm {K}$ and $\mathrm {K'}$ points are related by the $C_{2y}\mathcal T$ symmetry \cite {wu2019topological} and thus have identical eigenvalues. Note: when the magnetoroton band merges into the particle-hole(PH) continuum, the corresponding rotation eigenvalue is not presented since one cannot separate the magnetoroton state from the PH continuum. See Fig.\ref {fig: magnetoroton spectrum} for details.}}{58}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces $\mathbf A(n_1=1,n_2=0)$ (see Eq.(\ref {eq:A_def})) for Laughlin's $\nu =1/2$ state, with the sample shape parameter $\tau =i$ and $\tau =e^{i\frac {2\pi }{3}}$, and boundary condition $\varphi _{1,e}=\varphi _{2,e}=0$ (see Eq.(\ref {eq:boundary_conditions})).}}{66}{table.3.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces The parameters in the $\bm {k\cdot p}$ model.}}{101}{table.5.1}%

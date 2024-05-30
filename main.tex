@@ -1,10 +1,14 @@
-\documentclass[10pt,a4paper]{report}  % default square logo 
+\documentclass[10pt,a4paper]{report}  % the thsis font requirement is 12pt
 
-\usepackage[nomath]{stix2} % stix2 font
-\usepackage{amsmath,amssymb,amsfonts,bm}
+\usepackage{amsmath,amssymb,bm}
+\allowdisplaybreaks[4] % allow page breaks for long equations
 \usepackage[all]{xy}
 
+\usepackage[nomath]{stix2} % stix2 font: if `nomath' is true, then the math packages must be loaded before, otherwise latter
 \include{contents/user_defined_unicode_chars} % special manual handling for missing unicode chars in raw code
+
+
+\usepackage{setspace} % to set line spacing
 
 \usepackage{geometry}
     \geometry{
@@ -21,6 +25,7 @@
 \usepackage{url}
 
 \definecolor{celestialblue}{rgb}{0.29, 0.59, 0.82}
+\definecolor{url}{rgb}{0.29, 0.59, 0.82} % celestialblue
 \definecolor{darkpink}{rgb}{0.91, 0.33, 0.5}
 \usepackage[colorlinks=true, linkcolor=darkpink]{hyperref}
 
@@ -31,8 +36,10 @@
 \usepackage{ragged2e}
 
 
+\makeatletter
 % macros to fill in the thesis frontpage
-\newcommand{\thesistitle}{Symmetry, Topology and Strong Correlations in\\ Twisted 2D Materials}
+% \newcommand{\thesistitle}{Symmetry, Topology and Strong Correlations in\\ Twisted 2D Materials}
+\newcommand{\thesistitle}{Emergent Phenomena in twisted\\ Van der Waals Materials}
 \newcommand{\department}{Boston College\\[5mm] The Graduate School of Arts and Sciences\\[5mm] Department of Physics}
 \newcommand{\name}{Xiaodong Hu}
 \newcommand{\defenseinfo}{submitted in partial fulfillment of the requirements\\[5mm] for the degree of\\[5mm] \emph{Doctor of Philosophy}}
@@ -64,7 +71,8 @@
 
 
 \newcommand{\dd}{{\mathrm d}}
-
+% \renewcommand{\lesssim}{\mathrel{\gl@over{<}{\sim}}}
+\makeatother
 
 \begin{document}
 
@@ -76,30 +84,50 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
+\maketitle % create a title page from the preamble info
 
-\maketitle                  % create a title page from the preamble info
-% \include{dedication}        % include a dedication.tex file
-% \include{acknowlegements}   % include an acknowledgements.tex file
-% \include{abstract}          % include the abstract
 
+\newpage
+\thispagestyle{empty} % remove page
+\begin{center}
+    \vspace*{\fill}
+    \textbf{\copyright Copyright by {\color{url}Xiaodong Hu}\\ 2024}
+\end{center}
+
+
+\begin{spacing}{1.5}
+    \pagenumbering{roman}
+    \setcounter{page}{0}
+    \include{prefaces/abstract} % include the abstract
+    \include{prefaces/pub_list} % include a list of your own publications
+    \include{prefaces/acknowledge} % include an acknowledgements.tex file
+\end{spacing}
 
 \tableofcontents            % generate and include a table of contents
 \listoffigures              % generate and include a list of figures
 \listoftables
 
+\begin{spacing}{1.5}
+    \pagebreak
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
 
-%now include the files of latex for each of the chapters etc
-\include{contents/Prologue/Prologue}
-% \include{contents/SATHE/SATHE}
-% \include{contents/FCI_ProjWfc/FCI_ProjWfc}
-% \include{contents/Ising_Top/Ising_Top}
-% \include{contents/FCI_Code/FCI_Code}
+    %now include the files of latex for each of the chapters etc
+    \include{contents/Introduction/Introduction}
+    \include{contents/Background/background}
+
+    \include{contents/FCI_ProjWfc/FCI_ProjWfc}
+    \include{contents/SATHE/SATHE}
+    \include{contents/Ising_Top/Ising_Top}
+    % \include{contents/FCI_Code/FCI_Code}
 
 
-%now enable appendix numbering format and include any appendices
-% \appendix
-% \include{appendix1}
-% \include{appendix2}
+    %now enable appendix numbering format and include any appendices
+    % \appendix
+    % \include{appendix1}
+    % \include{appendix2}
+\end{spacing}
+
 
 %next line adds the Bibliography to the contents page
 \addcontentsline{toc}{chapter}{Bibliography}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.3.24)  2 APR 2024 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.28)  30 MAY 2024 17:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/hxd/Dropbox/PhD-Thesis/main
+**/home/hxd/Dropbox/PhD-Thesis/main.tex
 (/home/hxd/Dropbox/PhD-Thesis/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -24,12 +24,7 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/usr/share/texmf-dist/tex/latex/stix2-type1/stix2.sty
-Package: stix2 2021/01/14 v2.0.2-latex STIX Two fonts support package
- (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
-)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip50
 
@@ -56,6 +51,7 @@ LaTeX Info: Redefining \colon on input line 410.
 \DOTSCASE@=\count267
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
 LaTeX Info: Redefining \big on input line 722.
@@ -69,6 +65,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
 \c@MaxMatrixCols=\count269
 \dotsspace@=\muskip16
 \c@parentequation=\count270
@@ -96,13 +94,10 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-
-Package amssymb Warning: The 'amssymb' package is redundant when you are using the 'stix' package, so I'm not going to load amssymb.
-
-) (/usr/share/texmf-dist/tex/latex/tools/bm.sty
+)) (/usr/share/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -188,9 +183,14 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 \qcount@=\count282
 \qcount@@=\count283
 \matrixsize@=\count284
- loaded) (/usr/share/texmf-dist/tex/generic/xypic/xyarrow.tex  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded) (/usr/share/texmf-dist/tex/generic/xypic/xygraph.tex  Xy-pic option: Graph feature v.3.11 loaded) loaded) (/usr/share/texmf-dist/tex/generic/xypic/xypdf.tex  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded) Xy-pic pdf driver: `curve' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded) Xy-pic pdf driver: `frame' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded) Xy-pic pdf driver: `line' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded) Xy-pic pdf driver: `rotate' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
+ loaded) (/usr/share/texmf-dist/tex/generic/xypic/xyarrow.tex  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded) (/usr/share/texmf-dist/tex/generic/xypic/xygraph.tex  Xy-pic option: Graph feature v.3.11 loaded) loaded) (/usr/share/texmf-dist/tex/generic/xypic/xypdf.tex  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded) Xy-pic pdf driver: `curve' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded) Xy-pic pdf driver: `frame' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded) Xy-pic pdf driver: `line' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded) Xy-pic pdf driver: `rotate' extension support (/usr/share/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded)) (/usr/share/texmf-dist/tex/latex/stix2-type1/stix2.sty
+Package: stix2 2021/01/14 v2.0.2-latex STIX Two fonts support package
+ (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
+))
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 7.
+LaTeX Warning: \include should only be used after \begin{document} on input line 8.
 
 (./contents/user_defined_unicode_chars.tex (/usr/share/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
@@ -207,6 +207,8 @@ Package newunicodechar Warning: Redefining Unicode character on input line 14.
 
 Package newunicodechar Warning: Redefining Unicode character on input line 18.
 
+) (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
@@ -560,43 +562,43 @@ runsystem(command -v pygmentize && touch main.aex)...executed.
 
 runsystem(rm main.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 77.
  (/usr/share/texmf-dist/tex/latex/stix2-type1/t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count342
 \l__pdf_internal_box=\box72
-) (./main.aux (./contents/Prologue/Prologue.aux))
+) (./main.aux (./prefaces/abstract.aux) (./prefaces/pub_list.aux) (./prefaces/acknowledge.aux) (./contents/Introduction/Introduction.aux) (./contents/Background/background.aux) (./contents/FCI_ProjWfc/FCI_ProjWfc.aux) (./contents/SATHE/SATHE.aux) (./contents/Ising_Top/Ising_Top.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.39998pt on input line 69.
+Package xypdf Info: Line width: 0.39998pt on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -651,130 +653,915 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 69.
+Package hyperref Info: Link coloring ON on input line 77.
  (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}] (./main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 94.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
+File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
+) [0{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}]
+\openout2 = `prefaces/abstract.aux'.
+
+ (./prefaces/abstract.tex) [1
+
+
+] [2]
+\openout2 = `prefaces/pub_list.aux'.
+
+ (./prefaces/pub_list.tex) [3
+
+
+
+
+]
+\openout2 = `prefaces/acknowledge.aux'.
+
+ (./prefaces/acknowledge.tex [4
+
+
+
+
+] [5]) [6] (./main.toc [7
+
+
+
+] [8])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [2
+ [9] (./main.lof
+Overfull \hbox (10.46643pt too wide) in paragraph at lines 9--9
+ [][] [][][]\T1/stix2/b/n/10 Experimental Ob-verser-va-tion of Frac-tional Quan-tum Anoma-lous Hall Ef-fects in tMoTe$[]$ 
+ []
 
-] (./main.lof)
+[10
+
+] [11] [12] [13])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [3
-
-] (./main.lot)
+ [14] (./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [4
+ [15
 
 ]
-\openout2 = `contents/Prologue/Prologue.aux'.
+\openout2 = `contents/Introduction/Introduction.aux'.
 
- (./contents/Prologue/Prologue.tex
+ (./contents/Introduction/Introduction.tex
 Chapter 1.
-[5
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 
+      [1
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 21.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
-File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
-)
-Overfull \hbox (2.67503pt too wide) in paragraph at lines 28--29
-[]\T1/stix2/b/n/10 Statistics in 2D: Anyons. \T1/stix2/m/n/10 The most fa-mous ex-am-ple ex-hibit-ing the par-tic-u-lar-ity of the two-dimensional
- []
-
-[6{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}] [7]
-<figures/scaling_of_Anderson_localization.pdf, id=223, 578.16pt x 433.62pt>
-File: figures/scaling_of_Anderson_localization.pdf Graphic file (type pdf)
-<use figures/scaling_of_Anderson_localization.pdf>
-Package pdftex.def Info: figures/scaling_of_Anderson_localization.pdf  used on input line 68.
-(pdftex.def)             Requested size: 318.66948pt x 239.0012pt.
- [8
+<figures/Introduction/FQHE.png, id=772, 782.925pt x 598.48593pt>
+File: figures/Introduction/FQHE.png Graphic file (type png)
+<use figures/Introduction/FQHE.png>
+Package pdftex.def Info: figures/Introduction/FQHE.png  used on input line 26.
+(pdftex.def)             Requested size: 409.71692pt x 313.19615pt.
+<figures/SPT_SET_phase_diagram.png, id=783, 1187.18532pt x 484.81125pt>
+File: figures/SPT_SET_phase_diagram.png Graphic file (type png)
+<use figures/SPT_SET_phase_diagram.png>
+Package pdftex.def Info: figures/SPT_SET_phase_diagram.png  used on input line 33.
+(pdftex.def)             Requested size: 364.19667pt x 148.72903pt.
+ [2] [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.78 \end{equation*}
-                     <./figures/scaling_of_Anderson_localization.pdf>]
-Overfull \hbox (3.71107pt too wide) in paragraph at lines 88--89
-[]\T1/stix2/m/n/10 As non-triv-ial edge states which must ei-ther be gap-less, spon-ta-neously break sym-me-try or sup-port anoma-
- []
-
-[9]
-Overfull \hbox (1.10023pt too wide) detected at line 121
-\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/b/it/10 k\OT1/cmr/m/n/10 ) = []
- []
-
-[10]
-<figures/TMD.png, id=288, 2107.875pt x 1309.89375pt>
-File: figures/TMD.png Graphic file (type png)
-<use figures/TMD.png>
-Package pdftex.def Info: figures/TMD.png  used on input line 139.
-(pdftex.def)             Requested size: 455.24411pt x 282.90086pt.
-<figures/MoS2_Di.png, id=293, 854.44218pt x 666.99188pt>
-File: figures/MoS2_Di.png Graphic file (type png)
-<use figures/MoS2_Di.png>
-Package pdftex.def Info: figures/MoS2_Di.png  used on input line 156.
-(pdftex.def)             Requested size: 364.19667pt x 284.29726pt.
- [11
+l.38 
+      <./figures/Introduction/FQHE.png (PNG copy)>]
+<figures/Introduction/HEP_vs_CMP.png, id=822, 582.67688pt x 335.2525pt>
+File: figures/Introduction/HEP_vs_CMP.png Graphic file (type png)
+<use figures/Introduction/HEP_vs_CMP.png>
+Package pdftex.def Info: figures/Introduction/HEP_vs_CMP.png  used on input line 46.
+(pdftex.def)             Requested size: 273.14923pt x 157.16457pt.
+ [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.161 
-       <./figures/TMD.png>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 162.
- (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [12
+l.52 
+      <./figures/SPT_SET_phase_diagram.png (PNG copy)>]
+<figures/Introduction/high-T_topo_SC.png, id=837, 1185.67969pt x 545.03625pt>
+File: figures/Introduction/high-T_topo_SC.png Graphic file (type png)
+<use figures/Introduction/high-T_topo_SC.png>
+Package pdftex.def Info: figures/Introduction/high-T_topo_SC.png  used on input line 63.
+(pdftex.def)             Requested size: 455.24411pt x 209.26991pt.
+<figures/Introduction/node_movement.png, id=843, 938.75719pt x 704.6325pt>
+File: figures/Introduction/node_movement.png Graphic file (type png)
+<use figures/Introduction/node_movement.png>
+Package pdftex.def Info: figures/Introduction/node_movement.png  used on input line 76.
+(pdftex.def)             Requested size: 273.14923pt x 205.0263pt.
+ [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.169 \begin{equation*}
-                       {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./figures/MoS2_Di.png>] [13]
-<figures/tBLG_geometry.pdf, id=334, 538.37648pt x 344.23944pt>
-File: figures/tBLG_geometry.pdf Graphic file (type pdf)
-<use figures/tBLG_geometry.pdf>
-Package pdftex.def Info: figures/tBLG_geometry.pdf  used on input line 228.
-(pdftex.def)             Requested size: 432.48051pt x 276.5265pt.
- [14
+l.82 
+      <./figures/Introduction/HEP_vs_CMP.png>]
+<figures/Introduction/high_Tc_SC_phase_diagram.png, id=859, 1064.47687pt x 587.19376pt>
+File: figures/Introduction/high_Tc_SC_phase_diagram.png Graphic file (type png)
+<use figures/Introduction/high_Tc_SC_phase_diagram.png>
+Package pdftex.def Info: figures/Introduction/high_Tc_SC_phase_diagram.png  used on input line 90.
+(pdftex.def)             Requested size: 264.08824pt x 145.68144pt.
+<figures/Introduction/tBLG_SC_Cao_new.png, id=860, 800.9925pt x 672.26157pt>
+File: figures/Introduction/tBLG_SC_Cao_new.png Graphic file (type png)
+<use figures/Introduction/tBLG_SC_Cao_new.png>
+Package pdftex.def Info: figures/Introduction/tBLG_SC_Cao_new.png  used on input line 92.
+(pdftex.def)             Requested size: 173.5789pt x 145.68144pt.
+<figures/Introduction/tBLG_FQHE.png, id=871, 757.32938pt x 660.96938pt>
+File: figures/Introduction/tBLG_FQHE.png Graphic file (type png)
+<use figures/Introduction/tBLG_FQHE.png>
+Package pdftex.def Info: figures/Introduction/tBLG_FQHE.png  used on input line 99.
+(pdftex.def)             Requested size: 341.43307pt x 297.98817pt.
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.237 \end{align*}
-                   <./figures/tBLG_geometry.pdf>]) [15] (./main.bbl [16
+l.103 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.103 
+       <./figures/Introduction/high-T_topo_SC.png (PNG copy)> <./figures/Introduction/node_movement.png (PNG copy)>]
+<figures/Introduction/tMoTe2_PL.png, id=893, 770.88pt x 718.18312pt>
+File: figures/Introduction/tMoTe2_PL.png Graphic file (type png)
+<use figures/Introduction/tMoTe2_PL.png>
+Package pdftex.def Info: figures/Introduction/tMoTe2_PL.png  used on input line 109.
+(pdftex.def)             Requested size: 195.44846pt x 182.09486pt.
+<figures/Introduction/tMoTe2_transport.png, id=894, 701.62125pt x 665.48625pt>
+File: figures/Introduction/tMoTe2_transport.png Graphic file (type png)
+<use figures/Introduction/tMoTe2_transport.png>
+Package pdftex.def Info: figures/Introduction/tMoTe2_transport.png  used on input line 111.
+(pdftex.def)             Requested size: 191.97755pt x 182.09486pt.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.122     \item
+                In the first (this) chapter, I briefly discuss the motivatio... <./figures/Introduction/high_Tc_SC_phase_diagram.png (PNG copy)> <./figures/Introduction/tBLG_SC_Cao_new.png>] [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.122     \item
+                In the first (this) chapter, I briefly discuss the motivatio...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.122     \item
+                In the first (this) chapter, I briefly discuss the motivatio... <./figures/Introduction/tBLG_FQHE.png (PNG copy)> <./figures/Introduction/tMoTe2_PL.png (PNG copy)> <./figures/Introduction/tMoTe2_transport.png (PNG copy)>]) [9]
+\openout2 = `contents/Background/background.aux'.
+
+ (./contents/Background/background.tex
+Chapter 2.
+<figures/Background/TMD.png, id=930, 2107.875pt x 1309.89375pt>
+File: figures/Background/TMD.png Graphic file (type png)
+<use figures/Background/TMD.png>
+Package pdftex.def Info: figures/Background/TMD.png  used on input line 44.
+(pdftex.def)             Requested size: 455.24411pt x 282.90086pt.
+<figures/Background/MoS2_Di.png, id=934, 854.44218pt x 666.99188pt>
+File: figures/Background/MoS2_Di.png Graphic file (type png)
+<use figures/Background/MoS2_Di.png>
+Package pdftex.def Info: figures/Background/MoS2_Di.png  used on input line 53.
+(pdftex.def)             Requested size: 364.19667pt x 284.29726pt.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 59.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [10
 
 
 
-] [17]) [18] (./main.aux (./contents/Prologue/Prologue.aux))
+
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.60 
+      <./figures/Background/TMD.png>] [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.72 \end{equation*}
+                     <./figures/Background/MoS2_Di.png>]
+<figures/Background/monolayer_TMD_band_structure.png, id=978, 941.76843pt x 386.19281pt>
+File: figures/Background/monolayer_TMD_band_structure.png Graphic file (type png)
+<use figures/Background/monolayer_TMD_band_structure.png>
+Package pdftex.def Info: figures/Background/monolayer_TMD_band_structure.png  used on input line 83.
+(pdftex.def)             Requested size: 409.71692pt x 168.01607pt.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.96 \begin{equation}
+                     \label{eq:twisted dot product} <./figures/Background/monolayer_TMD_band_structure.png>]
+Overfull \hbox (6.9877pt too wide) detected at line 124
+[]
+ []
+
+[14] [15]
+<figures/tBLG_geometry_new.pdf, id=1010, 1175.79755pt x 477.45761pt>
+File: figures/tBLG_geometry_new.pdf Graphic file (type pdf)
+<use figures/tBLG_geometry_new.pdf>
+Package pdftex.def Info: figures/tBLG_geometry_new.pdf  used on input line 174.
+(pdftex.def)             Requested size: 364.19667pt x 147.88647pt.
+ [16]
+<figures/Background/Jain_CF.png, id=1028, 1367.1075pt x 483.30562pt>
+File: figures/Background/Jain_CF.png Graphic file (type png)
+<use figures/Background/Jain_CF.png>
+Package pdftex.def Info: figures/Background/Jain_CF.png  used on input line 203.
+(pdftex.def)             Requested size: 364.19667pt x 128.74646pt.
+ [17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.210 \end{equation*}
+                      <./figures/tBLG_geometry_new.pdf>] [18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.227 
+       <./figures/Background/Jain_CF.png>] [19]) [20]
+\openout2 = `contents/FCI_ProjWfc/FCI_ProjWfc.aux'.
+
+ (./contents/FCI_ProjWfc/FCI_ProjWfc.tex
+Chapter 3.
+[21
+
+
+
+
+]
+<figures/FCI/CF_band_Wen-Zee_shift_transition.pdf, id=1139, 603.61319pt x 230.73155pt>
+File: figures/FCI/CF_band_Wen-Zee_shift_transition.pdf Graphic file (type pdf)
+<use figures/FCI/CF_band_Wen-Zee_shift_transition.pdf>
+Package pdftex.def Info: figures/FCI/CF_band_Wen-Zee_shift_transition.pdf  used on input line 21.
+(pdftex.def)             Requested size: 204.85846pt x 78.30685pt.
+ [22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29 S
+      ome other theoretical issues are about the dynamical properties of the... <./figures/FCI/CF_band_Wen-Zee_shift_transition.pdf>] [23] [24] [25] [26]
+Overfull \hbox (7.57825pt too wide) in paragraph at lines 119--119
+[]\T1/stix2/b/n/12 Pasquier-Haldane-Read con-struc-tion for the bosonic $\OML/cmm/m/it/12 ^^W \OT1/cmr/m/n/12 = 1$ \T1/stix2/b/n/12 com-pos-ite fermion
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 119.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 119.
+
+[27] [28] [29] [30]
+<figures/FCI/Haldane_Rezayi.pdf, id=1334, 640.33705pt x 444.64459pt>
+File: figures/FCI/Haldane_Rezayi.pdf Graphic file (type pdf)
+<use figures/FCI/Haldane_Rezayi.pdf>
+Package pdftex.def Info: figures/FCI/Haldane_Rezayi.pdf  used on input line 239.
+(pdftex.def)             Requested size: 341.43307pt x 237.09209pt.
+ [31] [32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.268 \begin{align}
+                    <./figures/FCI/Haldane_Rezayi.pdf>] [33] [34] [35] [36] [37
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.431 \end{align}
+                 ] [38] [39] [40] [41]
+Overfull \hbox (9.50163pt too wide) in paragraph at lines 561--562
+[]\T1/stix2/m/n/10 How about the $\OML/cmm/m/it/10 D[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 a[]\OT1/cmr/m/n/10 )$\T1/stix2/m/n/10 -projective sym-me-try? For in-stance, in CF space $\OMS/cmsy/m/n/10 H[]$\T1/stix2/m/n/10 , it is im-ple-mented as $\OML/cmm/m/it/10 D[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 a[] \OT1/cmr/m/n/10 =
+ []
+
+[42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
+Overfull \hbox (8.50249pt too wide) in paragraph at lines 833--834
+\T1/stix2/m/n/10 way to in-tro-duce the FCI physics into the sys-tem is to turn on a pe-ri-odic po-ten-tial $\OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 r[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^Q [][] \OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 G[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[]$
+ []
+
+[52]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 862.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 862.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 862.
+
+[53]
+Overfull \hbox (13.53098pt too wide) in paragraph at lines 886--887
+[]\T1/stix2/m/n/10 In our cal-cu-la-tion, we as-sume the ex-is-tence of fer-ro-mag-netism and project the Coulomb in-ter-ac-tion Eq.[]
+ []
+
+<figures/FCI/combined_cf_translation_fractionalization.pdf, id=1680, 476.01704pt x 541.98567pt>
+File: figures/FCI/combined_cf_translation_fractionalization.pdf Graphic file (type pdf)
+<use figures/FCI/combined_cf_translation_fractionalization.pdf>
+Package pdftex.def Info: figures/FCI/combined_cf_translation_fractionalization.pdf  used on input line 907.
+(pdftex.def)             Requested size: 386.96027pt x 440.59383pt.
+[54] [55
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.915 B
+       oth the Laughlin state and our proposed projected wavefunction (in th... <./figures/FCI/combined_cf_translation_fractionalization.pdf>]
+<figures/FCI/combined_ED.pdf, id=1708, 656.49129pt x 857.70486pt>
+File: figures/FCI/combined_ED.pdf Graphic file (type pdf)
+<use figures/FCI/combined_ED.pdf>
+Package pdftex.def Info: figures/FCI/combined_ED.pdf  used on input line 918.
+(pdftex.def)             Requested size: 409.71692pt x 535.30515pt.
+<figures/FCI/combined_overlap.pdf, id=1710, 1314.55643pt x 900.82948pt>
+File: figures/FCI/combined_overlap.pdf Graphic file (type pdf)
+<use figures/FCI/combined_overlap.pdf>
+Package pdftex.def Info: figures/FCI/combined_overlap.pdf  used on input line 930.
+(pdftex.def)             Requested size: 455.24411pt x 311.96863pt.
+<figures/FCI/combined_tdhf_bands_and_surface_contour.pdf, id=1715, 1206.47491pt x 941.58685pt>
+File: figures/FCI/combined_tdhf_bands_and_surface_contour.pdf Graphic file (type pdf)
+<use figures/FCI/combined_tdhf_bands_and_surface_contour.pdf>
+Package pdftex.def Info: figures/FCI/combined_tdhf_bands_and_surface_contour.pdf  used on input line 943.
+(pdftex.def)             Requested size: 432.48051pt x 337.5199pt.
+ [56] [57
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.981 
+       <./figures/FCI/combined_ED.pdf>] [58
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.981 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.981 
+       <./figures/FCI/combined_overlap.pdf>] [59
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.981 
+       <./figures/FCI/combined_tdhf_bands_and_surface_contour.pdf>] [60] [61] [62] [63]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1091.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 1091.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 1091.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 1091.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 1091.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1091.
+
+[64] [65] [66
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1187     \end{align}
+                      ] [67]
+Overfull \hbox (32.41216pt too wide) in paragraph at lines 1243--1244
+[]\T1/stix2/m/n/10 The con-di-tion that $\OML/cmm/m/it/10 ^^N[]$ \T1/stix2/m/n/10 does not change the con-straint re-la-tions Eq.([][]3.145[][]) can also be writ-ten as $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 i []\OT1/cmr/m/n/10 [[][][\OT1/cmr/bx/n/10 S[]\OML/cmm/m/it/10 ; \OML/cmm/b/it/10 ^^^\OT1/cmr/m/n/10 ]] =
+ []
+
+[68] [69] [70]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\unskip' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@italiccorr' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\unskip' on input line 1329.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@italiccorr' on input line 1329.
+
+[71] [72] [73]
+<figures/FCI/supplemental_tdhf_bands.pdf, id=1987, 611.2666pt x 431.54704pt>
+File: figures/FCI/supplemental_tdhf_bands.pdf Graphic file (type pdf)
+<use figures/FCI/supplemental_tdhf_bands.pdf>
+Package pdftex.def Info: figures/FCI/supplemental_tdhf_bands.pdf  used on input line 1455.
+(pdftex.def)             Requested size: 432.48051pt x 305.3272pt.
+) [74] [75
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.119 ...include{contents/FCI_ProjWfc/FCI_ProjWfc}
+                                                   <./figures/FCI/supplemental_tdhf_bands.pdf>]
+\openout2 = `contents/SATHE/SATHE.aux'.
+
+ (./contents/SATHE/SATHE.tex
+Chapter 4.
+[76
+
+
+
+
+]
+<contents/SATHE/figures/illustration.pdf, id=2041, 488.38943pt x 167.7223pt>
+File: contents/SATHE/figures/illustration.pdf Graphic file (type pdf)
+<use contents/SATHE/figures/illustration.pdf>
+Package pdftex.def Info: contents/SATHE/figures/illustration.pdf  used on input line 12.
+(pdftex.def)             Requested size: 364.19667pt x 125.07483pt.
+ [77
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.23 \begin{align}
+                   <./contents/SATHE/figures/illustration.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 34.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 34.
+
+[78] [79] [80]
+Overfull \hbox (3.35631pt too wide) in paragraph at lines 111--112
+[]\T1/stix2/m/n/10 Monolayer FeSe is re-ported to host a sig-nif-i-cant node-less gap anisotropy of the form $\OML/cmm/m/it/10 ^^A[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^A[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^A[] [] \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 +
+ []
+
+[81]
+<contents/SATHE/figures/combined.pdf, id=2227, 612.36066pt x 696.35156pt>
+File: contents/SATHE/figures/combined.pdf Graphic file (type pdf)
+<use contents/SATHE/figures/combined.pdf>
+Package pdftex.def Info: contents/SATHE/figures/combined.pdf  used on input line 121.
+(pdftex.def)             Requested size: 386.96027pt x 440.0426pt.
+ [82] [83
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.129 
+       <./contents/SATHE/figures/combined.pdf>] [84]
+<contents/SATHE/figures/schematic_phase.pdf, id=2616, 445.58925pt x 248.33408pt>
+File: contents/SATHE/figures/schematic_phase.pdf Graphic file (type pdf)
+<use contents/SATHE/figures/schematic_phase.pdf>
+Package pdftex.def Info: contents/SATHE/figures/schematic_phase.pdf  used on input line 188.
+(pdftex.def)             Requested size: 182.09486pt x 101.48416pt.
+ [85] [86
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.216 \begin{align}
+                    <./contents/SATHE/figures/schematic_phase.pdf>] [87] [88] [89] [90] [91] [92]
+<contents/SATHE/figures/rotated_M-pocket.pdf, id=2721, 700.11177pt x 433.88928pt>
+File: contents/SATHE/figures/rotated_M-pocket.pdf Graphic file (type pdf)
+<use contents/SATHE/figures/rotated_M-pocket.pdf>
+Package pdftex.def Info: contents/SATHE/figures/rotated_M-pocket.pdf  used on input line 445.
+(pdftex.def)             Requested size: 386.96027pt x 239.8183pt.
+ [93] [94
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.458 
+       <./contents/SATHE/figures/rotated_M-pocket.pdf>]) [95]
+\openout2 = `contents/Ising_Top/Ising_Top.aux'.
+
+ (./contents/Ising_Top/Ising_Top.tex
+Chapter 5.
+[96
+
+
+
+
+]
+<contents/Ising_Top/figures/pdf_files/Magnetic_Buffer_Layer.combo.pdf, id=2864, 1428.33624pt x 636.3775pt>
+File: contents/Ising_Top/figures/pdf_files/Magnetic_Buffer_Layer.combo.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/Magnetic_Buffer_Layer.combo.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/Magnetic_Buffer_Layer.combo.pdf  used on input line 25.
+(pdftex.def)             Requested size: 455.24411pt x 202.82928pt.
+ [97] [98
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.33 
+      <./contents/Ising_Top/figures/pdf_files/Magnetic_Buffer_Layer.combo.pdf>]
+<contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.magnetic_with_prediction.pdf, id=2929, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.magnetic_with_prediction.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.magnetic_with_prediction.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.magnetic_with_prediction.pdf  used on input line 58.
+(pdftex.def)             Requested size: 204.85846pt x 136.72195pt.
+<contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.non-magnetic_with_prediction.pdf, id=2930, 433.62pt x 297.11pt>
+File: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.non-magnetic_with_prediction.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.non-magnetic_with_prediction.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.non-magnetic_with_prediction.pdf  used on input line 64.
+(pdftex.def)             Requested size: 204.85846pt x 140.36708pt.
+<contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.magnetic_with_prediction.pdf, id=2931, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.magnetic_with_prediction.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.magnetic_with_prediction.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.magnetic_with_prediction.pdf  used on input line 73.
+(pdftex.def)             Requested size: 204.85846pt x 136.72195pt.
+<contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.non-magnetic_with_prediction.pdf, id=2932, 431.6125pt x 297.11pt>
+File: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.non-magnetic_with_prediction.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.non-magnetic_with_prediction.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.non-magnetic_with_prediction.pdf  used on input line 79.
+(pdftex.def)             Requested size: 204.85846pt x 141.01537pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=6.pdf, id=2940, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=6.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=6.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=6.pdf  used on input line 95.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=4.pdf, id=2941, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=4.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=4.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=4.pdf  used on input line 96.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=2.pdf, id=2942, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=2.pdf  used on input line 97.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=6.pdf, id=2943, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=6.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=6.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=6.pdf  used on input line 100.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=4.pdf, id=2944, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=4.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=4.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=4.pdf  used on input line 101.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=2.pdf, id=2945, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=2.pdf  used on input line 102.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=3.pdf, id=2946, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=3.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=3.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=3.pdf  used on input line 110.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=2.pdf, id=2947, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=2.pdf  used on input line 111.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=1.pdf, id=2948, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=1.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=1.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=1.pdf  used on input line 112.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=3.pdf, id=2949, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=3.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=3.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=3.pdf  used on input line 115.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=2.pdf, id=2950, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=2.pdf  used on input line 116.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+<contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=1.pdf, id=2951, 452.69125pt x 302.12875pt>
+File: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=1.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=1.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=1.pdf  used on input line 117.
+(pdftex.def)             Requested size: 150.23138pt x 100.26523pt.
+ [99] [100
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.124 
+       <./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.magnetic_with_prediction.pdf> <./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.non-magnetic_with_prediction.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.TaS2.t_H.non-magnetic_with_prediction.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.magnetic_with_prediction.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.magnetic_with_prediction.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.non-magnetic_with_prediction.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/Gap_Size_Phase_Diagram.NbSe2.t_H.non-magnetic_with_prediction.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [101
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.153 \begin{align}
+                   \label{eqn:1layer_bcs}] [102
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.153 \begin{align}
+                   \label{eqn:1layer_bcs} <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=6.pdf> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=4.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=2.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.magnetic.t=2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=6.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=6.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=4.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=2.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.TaS2.theta_phi.non-magnetic.t=2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=3.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=2.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=1.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.magnetic.t=1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=3.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=2.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=1.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/gap_size_distribution.NbSe2.theta_phi.non-magnetic.t=1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_TaS2.pdf, id=4751, 187.70125pt x 196.735pt>
+File: contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_TaS2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_TaS2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_TaS2.pdf  used on input line 161.
+(pdftex.def)             Requested size: 140.77559pt x 147.55087pt.
+<contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_NbSe2.pdf, id=4752, 178.6675pt x 184.69pt>
+File: contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_NbSe2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_NbSe2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_NbSe2.pdf  used on input line 165.
+(pdftex.def)             Requested size: 134.00029pt x 138.51714pt.
+ <xymatrix 2x1 58>
+<contents/Ising_Top/figures/pdf_files/node.pdf, id=4753, 200.75pt x 263.98625pt>
+File: contents/Ising_Top/figures/pdf_files/node.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/node.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/node.pdf  used on input line 171.
+(pdftex.def)             Requested size: 80.29857pt x 105.59262pt.
+<contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_TaS2.pdf, id=4759, 449.68pt x 205.76875pt>
+File: contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_TaS2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_TaS2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_TaS2.pdf  used on input line 184.
+(pdftex.def)             Requested size: 409.71692pt x 187.48846pt.
+<contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_NbSe2.pdf, id=4760, 452.69125pt x 150.5625pt>
+File: contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_NbSe2.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_NbSe2.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_NbSe2.pdf  used on input line 189.
+(pdftex.def)             Requested size: 409.71692pt x 136.27002pt.
+ [103
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.200 \end{align}
+                  <./contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_TaS2.pdf> <./contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_NbSe2.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/monolayer_Fermi_Surface_NbSe2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./contents/Ising_Top/figures/pdf_files/node.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/node.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [104
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.200 \end{align}
+                  <./contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_TaS2.pdf> <./contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_NbSe2.pdf
+
+pdfTeX warning: pdflatex (file ./contents/Ising_Top/figures/pdf_files/monolayer_band_Gamma_M_K_NbSe2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Overfull \hbox (10.66737pt too wide) in paragraph at lines 204--205
+\T1/stix2/m/n/10 of the topo-log-i-cal su-per-con-duc-tiv-ity, be-low we fo-cus on one par-tic-u-lar regime, in which $[] \OMS/cmsy/m/n/10 ^^]
+ []
+
+<contents/Ising_Top/figures/pdf_files/eight_nodes.pdf, id=5124, 375.4025pt x 729.72626pt>
+File: contents/Ising_Top/figures/pdf_files/eight_nodes.pdf Graphic file (type pdf)
+<use contents/Ising_Top/figures/pdf_files/eight_nodes.pdf>
+Package pdftex.def Info: contents/Ising_Top/figures/pdf_files/eight_nodes.pdf  used on input line 209.
+(pdftex.def)             Requested size: 150.15834pt x 291.88533pt.
+[105
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.217 
+       <./contents/Ising_Top/figures/pdf_files/eight_nodes.pdf>] [106] [107] [108] [109]
+Overfull \hbox (32.69073pt too wide) in paragraph at lines 336--337
+[]\T1/stix2/m/n/10 In the ab-sence of the mid-dle layer, we con-sider the spin-ful TMD bi-layer Hamil-to-nian $\OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []\OMS/cmsy/m/n/10 f\OML/cmm/b/it/10 h[]\OT1/cmr/m/n/10 (\OML/cmm/b/it/10 k\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OML/cmm/b/it/10 h[]\OT1/cmr/m/n/10 (\OML/cmm/b/it/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$\T1/stix2/m/n/10 .
+ []
+
+[110]
+Underfull \hbox (badness 4266) in paragraph at lines 378--378
+[][][]\T1/stix2/m/n/8 For few-layer $[]$, the re-la-tion is also re-ported to be $\OT1/cmr/m/n/8 ^^A[] = 2\OML/cmm/m/it/8 :\OT1/cmr/m/n/8 2\OML/cmm/m/it/8 k[]T[]$ \T1/stix2/m/n/8 in [][]$\T1/cmtt/m/n/8 https : / / www . nature . com / articles /
+ []
+
+[111] [112]
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\perp' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gg' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 419.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 419.
+
+[113] [114] [115] [116]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 540.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 540.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 540.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 540.
+
+[117] [118]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 610.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 610.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 610.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 610.
+
+[119]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 627.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 627.
+
+[120]) [121] (./main.bbl [122
+
+
+
+] [123]
+Underfull \hbox (badness 2035) in paragraph at lines 169--172
+[]\T1/stix2/m/n/10 Alexei Ki-taev and John Preskill.  Topo-log-i-cal en-tan-gle-ment en-tropy.  \T1/stix2/m/it/10 Phys-i-cal re-view let-ters\T1/stix2/m/n/10 ,
+ []
+
+[124]
+Underfull \hbox (badness 1845) in paragraph at lines 249--252
+[]\T1/stix2/m/n/10 M Ser-lin, CL Tschirhart, H Pol-shyn, Y Zhang, J Zhu, K Watan-abe, T Taniguchi, L Ba-lents,
+ []
+
+[125] [126] [127] [128] [129] [130] [131]
+Underfull \hbox (badness 1009) in paragraph at lines 754--757
+\T1/stix2/m/n/10 Taniguchi, and Ali Yaz-dani.  Ev-i-dence for un-con-ven-tional su-per-con-duc-tiv-ity in twisted bi-layer
+ []
+
+[132] [133] [134]
+Underfull \hbox (badness 7344) in paragraph at lines 967--970
+[]\T1/stix2/m/n/10 Chang-woo Cho, Jian Lyu, Cheuk Yin Ng, James Jun He, Kwan To Lo, Dmitriy Cha-
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 967--970
+\T1/stix2/m/n/10 reev, Tarob A. Abdel-Baset, Mah-moud Abdel-Hafiez, and Rolf Lortz.  Ev-i-dence for the
+ []
+
+[135] [136] [137]
+Underfull \hbox (badness 1342) in paragraph at lines 1102--1105
+[]\T1/stix2/m/n/10 Ding Zhong, Kyle L Seyler, Xi-ayu Lin-peng, Ran Cheng, Nikhil Sivadas, Bevin Huang, Emma
+ []
+
+[138] [139]) [140] (./main.aux (./prefaces/abstract.aux) (./prefaces/pub_list.aux) (./prefaces/acknowledge.aux) (./contents/Introduction/Introduction.aux) (./contents/Background/background.aux) (./contents/FCI_ProjWfc/FCI_ProjWfc.aux) (./contents/SATHE/SATHE.aux) (./contents/Ising_Top/Ising_Top.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 48EFB29ACE7808D7F0187D704379F2EE;3074.
+(rerunfilecheck)             Checksum: 48C83AB784F3D3B6BEA44A038287D88F;20248.
  ) 
 Here is how much of TeX's memory you used:
- 17280 strings out of 476065
- 279065 string characters out of 5793264
- 1944187 words of memory out of 5000000
- 38952 multiletter control sequences out of 15000+600000
- 699916 words of font info for 100 fonts, out of 8000000 for 9000
+ 19541 strings out of 476065
+ 335650 string characters out of 5793264
+ 1979187 words of memory out of 5000000
+ 40398 multiletter control sequences out of 15000+600000
+ 743180 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 77i,11n,79p,3240b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-BoldItalic.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (18 pages, 2321587 bytes).
+ 77i,18n,79p,3244b,836s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr/share/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
+Output written on main.pdf (157 pages, 16246130 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5776 PDF objects out of 6186 (max. 8388607)
+ 4535 compressed objects within 46 object streams
+ 846 named destinations out of 1000 (max. 500000)
+ 854 words of extra memory for PDF output out of 10000 (max. 10000000)
 
